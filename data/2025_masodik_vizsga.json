@@ -429,7 +429,7 @@
           "label": "kHz"
         }
       ],
-      "text": "Egy rádióadó által kibocsátott elektromágneses hullámnak a hullámhossza 300 méter. A frekvenciája ekkor kb. [c_1] [c_MHz]. A jel periódusideje kb. [c_1] [c_us].",
+      "text": "Egy rádióadó által kibocsátott elektromágneses hullámnak a hullámhossza 300 méter. A frekvenciája ekkor kb. [c_1] [c_MHz]. A jel periódusideje kb. [c_1] [c_us]. Az Avogadro-szám 6,022·10^23 mol, A fénysebesség 3·10^8 m/s, Az átlagos Föld-Hold távolság kb. 3,84·10^8 m",
       "ID": 11,
       "supervised": "Helyes válasz."
     },
@@ -605,7 +605,7 @@
           "label": "PCR"
         }
       ],
-      "text": "MPEG2-TS-ben:\n- az egyes programokhoz tartozó elemi folyamok csomagazonosítóit tartalmazó tábla neve [c1].\n- a transport streamben továbbított csatornák azonosítóit tartalmazó tábla neve [c6].\nEgy MPEG2-TS-ben [c10] program lehet.\nEgy programban [c10] elemi folyam lehet.\nEgy MPEG2-TS-hez logikailag [c3] PAT tartozik.",
+      "text": "MPEG2-TS-ben:\n- az egyes programokhoz tartozó elemi folyamok csomagazonosítóit tartalmazó tábla neve [c1].\n- a transport streamben továbbított csatornák azonosítóit tartalmazó tábla neve [c6].\nEgy MPEG2-TS-ben [c10] program lehet.\nEgy programban [c10] elemi folyam lehet.\nEgy MPEG2-TS-hez logikailag [c3] PAT tartozik.\nSegítségképp a rövidítések feloldása:\nEIT: Event Info Table\nPAT: Program Association Table\nPID: Packet Identifier\nPCR: Program Clock Reference\nPES: Packetized Elementary Stream\nPMT: Program Map Table",
       "ID": 14,
       "supervised": "Helytelen válaszok: az első tábla neve [PMT], a másodiké [PAT]. Logikailag [egy] PAT tartozik a TS-hez."
     },
