@@ -1,7 +1,11 @@
 # Quizesch
 
 A simple, web-based quiz application designed to load and present quizzes dynamically from JSON data files. This project is currently under active development.
-Developed by forianzsiga
+
+Developed by forianzsiga 
+
+Copyright (c) 2025 forianzsiga
+
 
 ## Purpose
 
