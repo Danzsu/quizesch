@@ -135,18 +135,22 @@
         "type": "Synthetic Questionnaire"
       }
     },
+    {
     "fileName": "2018_2025_ZH_it_biztonsag_combined_.json",
       "tags": {
         "subject": "IT Biztonság",
         "type": "ZH",
         "year": "combined"
+        }
       },
+    {
     "fileName": "2025_ZH_it_biztonsag.json",
       "tags": {
         "subject": "IT Biztonság",
         "type": "ZH",
         "year": "2025"
       }
+    }
   ],
   "availableTags": {
     "subject": [
