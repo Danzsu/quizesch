@@ -121,6 +121,7 @@ Each quiz file in the `data/` directory must be a JSON array `[]` containing que
   },
   "answer": ["c"]
 }
+```
 ## Disclaimer
 
 Developed by forianzsiga 
