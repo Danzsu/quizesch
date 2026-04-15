@@ -2,9 +2,7 @@
 
 A simple, web-based quiz application designed to load and present quizzes dynamically from JSON data files. This project is currently under active development.
 
-Developed by forianzsiga 
 
-Copyright (c) 2025 forianzsiga
 
 
 ## Purpose
@@ -123,3 +121,8 @@ Each quiz file in the `data/` directory must be a JSON array `[]` containing que
   },
   "answer": ["c"]
 }
+## Disclaimer
+
+Developed by forianzsiga 
+
+Copyright (c) 2025 forianzsiga
