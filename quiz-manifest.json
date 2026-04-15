@@ -139,7 +139,8 @@
   "availableTags": {
     "subject": [
       "Kommunikációs Hálózatok",
-      "Szoftvertechnikák"
+      "Szoftvertechnikák",
+      "IT Biztonság"
     ],
     "type": [
       "PPZH",
@@ -155,7 +156,8 @@
       "2022",
       "2021",
       "2020",
-      "undefined"
+      "undefined",
+      "combined"
     ]
   }
 }
