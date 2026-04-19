@@ -10,6 +10,7 @@
 <style>
   /* ── TOKENS ── */
   :root {
+    --ui-scale: 1.25;
     /* MLU Explain inspired warm palette */
     --cream:       #faf8f2;
     --cream2:      #f3f0e6;
@@ -56,8 +57,8 @@
     --accent-light: var(--coral-light);
     --accent-fg:    #ffffff;
 
-    --radius:    12px;
-    --radius-sm: 8px;
+    --radius:    13px;
+    --radius-sm: 9px;
     --radius-xs: 5px;
     --font:      'DM Sans', sans-serif;
     --serif:     'DM Serif Display', serif;
@@ -121,16 +122,27 @@
     max-width: 820px;
     margin: 0 auto;
     padding: 0 20px 60px;
+    transform: scale(var(--ui-scale));
+    transform-origin: top center;
+    width: calc(100% / var(--ui-scale));
+  }
+
+  @media (max-width: 1100px) {
+    :root { --ui-scale: 1.12; }
+  }
+
+  @media (max-width: 820px) {
+    :root { --ui-scale: 1; }
   }
 
   /* ── NAVBAR ── */
   .nav {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 16px 0 14px;
+    gap: 10px;
+    padding: 14px 0 12px;
     border-bottom: 1px solid var(--border);
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
   .nav-back {
     display: inline-flex;
@@ -138,7 +150,7 @@
     gap: 5px;
     font-size: 12px;
     color: var(--text3);
-    padding: 5px 10px 5px 8px;
+    padding: 6px 12px 6px 10px;
     border: 0.5px solid var(--border2);
     border-radius: 999px;
     background: transparent;
@@ -150,40 +162,50 @@
   .nav-brand {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 8px;
     font-family: var(--serif);
-    font-size: 18px;
+    font-size: 17px;
     color: var(--text);
     letter-spacing: -0.01em;
   }
   .nav-brand-icon {
-    width: 28px; height: 28px;
+    width: 30px; height: 30px;
     background: var(--coral);
     border-radius: 8px;
     display: flex; align-items: center; justify-content: center;
     color: #fff;
     font-family: var(--serif);
-    font-size: 14px;
+    font-size: 15px;
     font-style: italic;
   }
 
-  .nav-meta { flex: 1; min-width: 0; }
+  .nav-meta {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
   .nav-quiz-title {
     font-size: 13px;
     font-weight: 500;
     color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
+    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: flex;
-    align-items: center;
-    gap: 7px;
   }
   .nav-quiz-sub {
     font-size: 11px;
     color: var(--text3);
     font-family: var(--mono);
     margin-top: 1px;
+    width: 100%;
+    text-align: right;
   }
 
   .badge {
@@ -204,8 +226,15 @@
   .nav-actions {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     flex-shrink: 0;
+  }
+
+  .nav-divider {
+    width: 1px;
+    height: 20px;
+    background: var(--border2);
+    margin: 0 2px;
   }
 
   /* ── ICON BUTTON ── */
@@ -213,7 +242,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 34px; height: 34px;
+    width: 38px; height: 38px;
     border: 0.5px solid var(--border2);
     border-radius: var(--radius-sm);
     background: transparent;
@@ -229,7 +258,7 @@
     background: var(--bg2);
     border: 0.5px solid var(--border);
     border-radius: var(--radius);
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     overflow: hidden;
     box-shadow: var(--shadow);
   }
@@ -394,7 +423,7 @@
   /* ── QUESTION CARD ── */
   .q-card {
     background: var(--bg2);
-    border: 0.5px solid var(--border);
+    border: 0.5px solid var(--border2);
     border-radius: var(--radius);
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -673,10 +702,10 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    padding: 8px 14px;
+    padding: 8px 15px;
     font-size: 12px;
     font-weight: 400;
-    border-radius: var(--radius-sm);
+    border-radius: 10px;
     border: 0.5px solid var(--border2);
     background: transparent;
     color: var(--text);
@@ -774,7 +803,7 @@
 
   <!-- NAV -->
   <nav class="nav">
-    <button class="nav-back" onclick="window.location.href='quizesch-home.html'">
+    <button class="nav-back" id="back-home-btn">
       <i data-lucide="chevron-left"></i>
       Vissza
     </button>
@@ -782,7 +811,7 @@
       <div class="nav-brand-icon">Q</div>
       Quizesch
     </div>
-    <div style="width:1px;height:20px;background:var(--border2);"></div>
+    <div class="nav-divider"></div>
     <div class="nav-meta">
       <div class="nav-quiz-title">
         <span id="qz-title">(2025) ZH IT Biztonság</span>
@@ -791,7 +820,7 @@
       <div class="nav-quiz-sub" id="qz-sub">1 / 40 kérdés</div>
     </div>
     <div class="nav-actions">
-      <button class="icon-btn" id="theme-btn" onclick="toggleTheme()" title="Téma váltás (T)">
+      <button class="icon-btn" id="theme-btn" title="Téma váltás (T)">
         <i data-lucide="sun"></i>
       </button>
     </div>
@@ -799,7 +828,7 @@
 
   <!-- PROGRESS ACCORDION -->
   <div class="progress-section">
-    <button type="button" class="progress-trigger" onclick="toggleProgress()">
+    <button type="button" class="progress-trigger" id="progress-trigger-btn">
       <div class="progress-bar-wrap">
         <div class="progress-bar-fill" id="prog-fill" style="width:2.5%"></div>
       </div>
@@ -866,11 +895,11 @@
 
       <div class="trust-row">
         <span class="trust-label">Megbízhatóság:</span>
-        <button class="trust-btn" id="btn-trust" onclick="vote('trustworthy')">
+        <button class="trust-btn" id="btn-trust">
           <i data-lucide="thumbs-up"></i>
           Megbízható
         </button>
-        <button class="trust-btn" id="btn-review" onclick="vote('review')">
+        <button class="trust-btn" id="btn-review">
           <i data-lucide="flag"></i>
           Ellenőrzendő
         </button>
@@ -880,28 +909,28 @@
     </div>
 
     <div class="action-bar">
-      <button class="btn" onclick="prevQ()">
+      <button class="btn" id="prev-btn">
         <i data-lucide="chevron-left"></i>
         Előző <kbd>←</kbd>
       </button>
-      <button class="btn" onclick="clearAnswer()">
+      <button class="btn" id="clear-answer-btn">
         <i data-lucide="x"></i>
         Törlés <kbd>C</kbd>
       </button>
-      <button class="btn" onclick="nextQ()">
+      <button class="btn" id="next-btn">
         Következő <kbd>→</kbd>
         <i data-lucide="chevron-right"></i>
       </button>
       <div class="spacer"></div>
-      <button class="btn" onclick="shuffleQ()">
+      <button class="btn" id="shuffle-btn">
         <i data-lucide="shuffle"></i>
         Keverés
       </button>
-      <button class="btn btn-danger" onclick="clearAll()">
+      <button class="btn btn-danger" id="clear-all-btn">
         <i data-lucide="trash-2"></i>
         Összes törlése
       </button>
-      <button class="btn btn-primary" onclick="evaluate()">
+      <button class="btn btn-primary" id="evaluate-btn">
         <i data-lucide="check"></i>
         Kiértékelés <kbd>E</kbd>
       </button>
@@ -1472,10 +1501,10 @@ async function refreshVoteData(qIndex) {
 }
 
 function renderButtons(qIndex) {
-  const prev = document.querySelector('.action-bar .btn:nth-child(1)');
-  const clear = document.querySelector('.action-bar .btn:nth-child(2)');
-  const next = document.querySelector('.action-bar .btn:nth-child(3)');
-  const evalBtn = document.querySelector('.action-bar .btn-primary');
+  const prev = document.getElementById('prev-btn');
+  const clear = document.getElementById('clear-answer-btn');
+  const next = document.getElementById('next-btn');
+  const evalBtn = document.getElementById('evaluate-btn');
 
   prev.disabled = state.current === 0;
   next.disabled = state.current === state.questions.length - 1;
@@ -1591,7 +1620,24 @@ function showFatalError(message) {
   lucide.createIcons();
 }
 
+function setupQuizInteractions() {
+  document.getElementById('back-home-btn').addEventListener('click', function() {
+    globalThis.location.href = 'quizesch-home.html';
+  });
+  document.getElementById('theme-btn').addEventListener('click', toggleTheme);
+  document.getElementById('progress-trigger-btn').addEventListener('click', toggleProgress);
+  document.getElementById('btn-trust').addEventListener('click', function() { void vote('trustworthy'); });
+  document.getElementById('btn-review').addEventListener('click', function() { void vote('review'); });
+  document.getElementById('prev-btn').addEventListener('click', prevQ);
+  document.getElementById('clear-answer-btn').addEventListener('click', clearAnswer);
+  document.getElementById('next-btn').addEventListener('click', nextQ);
+  document.getElementById('shuffle-btn').addEventListener('click', shuffleQ);
+  document.getElementById('clear-all-btn').addEventListener('click', clearAll);
+  document.getElementById('evaluate-btn').addEventListener('click', evaluate);
+}
+
 async function init() {
+  setupQuizInteractions();
   applyStoredTheme();
   const quizFile = getQuizFileFromUrl();
   if (!quizFile) {
