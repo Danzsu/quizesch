@@ -150,6 +150,14 @@
         "type": "ZH",
         "year": "2025"
       }
+    },
+    {
+    "fileName": "2026_it_biztonsag_ellenorzo_kerdesek.json",
+      "tags": {
+        "subject": "IT Biztonság",
+        "type": "ZH",
+        "year": "2026"
+      }
     }
   ],
   "availableTags": {
@@ -163,9 +171,11 @@
       "PZH",
       "Synthetic Questionnaire",
       "Vizsga",
-      "ZH"
+      "ZH",
+      "Questionnaire"
     ],
     "year": [
+      "2026",
       "2025",
       "2024",
       "2023",
