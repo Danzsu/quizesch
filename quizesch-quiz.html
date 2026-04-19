@@ -137,7 +137,8 @@
 
   /* ── NAVBAR ── */
   .nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 10px;
     padding: 14px 0 12px;
@@ -167,6 +168,8 @@
     font-size: 17px;
     color: var(--text);
     letter-spacing: -0.01em;
+    justify-self: center;
+    grid-column: 2;
   }
   .nav-brand-icon {
     width: 30px; height: 30px;
@@ -177,6 +180,14 @@
     font-family: var(--serif);
     font-size: 15px;
     font-style: italic;
+  }
+
+  .nav-right {
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
   }
 
   .nav-meta {
@@ -230,13 +241,6 @@
     flex-shrink: 0;
   }
 
-  .nav-divider {
-    width: 1px;
-    height: 20px;
-    background: var(--border2);
-    margin: 0 2px;
-  }
-
   /* ── ICON BUTTON ── */
   .icon-btn {
     display: inline-flex;
@@ -271,8 +275,22 @@
     cursor: pointer;
     transition: background 120ms;
     user-select: none;
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-radius: calc(var(--radius) - 1px);
+    appearance: none;
   }
   .progress-trigger:hover { background: var(--bg3); }
+  .progress-trigger:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 0 1px var(--border3);
+  }
+  .progress-trigger.open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: inset 0 -0.5px 0 var(--border);
+  }
 
   .progress-bar-wrap {
     flex: 1;
@@ -327,6 +345,10 @@
     border-top: 0.5px solid var(--border);
     padding: 16px 16px 18px;
     display: none;
+    margin-top: -0.5px;
+    border-bottom-left-radius: calc(var(--radius) - 1px);
+    border-bottom-right-radius: calc(var(--radius) - 1px);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
   }
   .progress-panel.open { display: block; }
 
@@ -811,18 +833,19 @@
       <div class="nav-brand-icon">Q</div>
       Quizesch
     </div>
-    <div class="nav-divider"></div>
-    <div class="nav-meta">
-      <div class="nav-quiz-title">
-        <span id="qz-title">(2025) ZH IT Biztonság</span>
-        <span class="badge badge-green" id="qz-badge">✓ Supervised</span>
+    <div class="nav-right">
+      <div class="nav-meta">
+        <div class="nav-quiz-title">
+          <span id="qz-title">(2025) ZH IT Biztonság</span>
+          <span class="badge badge-green" id="qz-badge">✓ Supervised</span>
+        </div>
+        <div class="nav-quiz-sub" id="qz-sub">1 / 40 kérdés</div>
       </div>
-      <div class="nav-quiz-sub" id="qz-sub">1 / 40 kérdés</div>
-    </div>
-    <div class="nav-actions">
-      <button class="icon-btn" id="theme-btn" title="Téma váltás (T)">
-        <i data-lucide="sun"></i>
-      </button>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-btn" title="Téma váltás (T)">
+          <i data-lucide="sun"></i>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -1187,6 +1210,7 @@ function toggleProgress() {
   state.progOpen = !state.progOpen;
   document.getElementById('prog-panel').classList.toggle('open', state.progOpen);
   document.getElementById('prog-chevron').classList.toggle('open', state.progOpen);
+  document.getElementById('progress-trigger-btn').classList.toggle('open', state.progOpen);
   if (state.progOpen) renderDots();
 }
 
