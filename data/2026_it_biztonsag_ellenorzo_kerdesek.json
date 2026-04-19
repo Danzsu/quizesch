@@ -1,0 +1,2925 @@
+{
+  "tags": {
+    "subject": "IT biztonság",
+    "type": "ZH",
+    "year": "2026"
+  },
+  "questions": [
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az IT biztonság elsősorban...",
+      "options": {
+        "A": "a támadások megelőzésével, észlelésével, kezelésével és a nem kompromittált állapot fenntartásával foglalkozik.",
+        "B": "kizárólag véletlen hardverhibák statisztikai elemzésével foglalkozik."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 1
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Támadó alatt azt értjük, aki...",
+      "options": {
+        "A": "egy rendszer sebezhetőségeit kihasználva kompromittálni próbálja a rendszert.",
+        "B": "kizárólag csak fizikai károkozást tud okozni, szoftvereset nem."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 2
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Egy támadás azért lehet sikeres, mert...",
+      "options": {
+        "A": "a rendszerben kihasználható sebezhetőségek vannak, és a támadó képes ezeket exploitálni.",
+        "B": "minden rendszer eleve feltörhetetlen, ezért támadás csak véletlenül lehet sikeres."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 3
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A rendszer üzemeltetője alapvetően úgy védekezhet, hogy...",
+      "options": {
+        "A": "megelőző, észlelő és reagáló biztonsági mechanizmusokat vezet be, majd incidens esetén helyreállít.",
+        "B": "kizárólag a támadások utólagos dokumentálására koncentrál."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 4
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Kompromittált állapot az, amikor...",
+      "options": {
+        "A": "az elvárt biztonsági követelmények közül egy vagy több nem teljesül.",
+        "B": "a rendszer egy tervezett kompromisszum (trade-off) miatt lassabban működik."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 5
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A CIA triád elemei:",
+      "options": {
+        "A": "bizalmasság, integritás, rendelkezésre állás.",
+        "B": "hitelesítés, naplózás, titkos kulcs."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 6
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az AAA rövidítés jelentése:",
+      "options": {
+        "A": "authentication, authorization/access control, accounting.",
+        "B": "availability, anonymity, assurance."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 7
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A fenyegetés (threat) legjobb leírása:",
+      "options": {
+        "A": "egy potenciális támadás, amelyet egy adott típusú támadó hajthat végre egy adott érték ellen.",
+        "B": "egy már biztosan bekövetkezett biztonsági incidens."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 8
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kockázat (risk) a diasor szerint:",
+      "options": {
+        "A": "a fenyegetés bekövetkezése esetén várható veszteség mértéke.",
+        "B": "pusztán egy támadás bekövetkezési valószínűsége."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 9
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kockázatmenedzsment során tipikusan azt vizsgáljuk, hogy...",
+      "options": {
+        "A": "mik az értékek, milyen fenyegetések és sebezhetőségek vannak, mekkora a veszteség és a valószínűség, illetve milyen ellenintézkedések érik meg.",
+        "B": "csak azt, hogy milyen antivírust lehet a legolcsóbban megvenni."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 10
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kockázat gyakorlati becslésekor érdemes figyelembe venni...",
+      "options": {
+        "A": "a valószínűséget és a hatást, valamint a támadó motivációját, szándékát és lehetőségeit.",
+        "B": "kizárólag a támadó országát."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 11
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az IT biztonság általános célja:",
+      "options": {
+        "A": "a rendszer folyamatos nem kompromittált állapotban tartása.",
+        "B": "annak garantálása, hogy semmilyen jövőbeli támadás soha ne történhessen."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 12
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A jelszó vagy bizalmas üzleti adatok kiszivárgása elsősorban a...",
+      "options": {
+        "A": "bizalmasságot sérti.",
+        "B": "rendelkezésre állást sérti."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 13
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Adatbázisban tárolt adatok jogosulatlan módosítása elsősorban a...",
+      "options": {
+        "A": "integritást sérti.",
+        "B": "bizalmasságot sérti."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 14
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "DoS támadás esetén elsősorban a...",
+      "options": {
+        "A": "rendelkezésre állás sérül.",
+        "B": "letagadhatatlanság sérül."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 15
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A támadókat elsősorban ezek alapján jellemezhetjük:",
+      "options": {
+        "A": "motiváció, képességek, erőforrások.",
+        "B": "életkor, kedvenc operációs rendszer, monitor méret."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 16
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Támadás előtt a támadó számára hasznos lehet megszerezni...",
+      "options": {
+        "A": "a rendszer felépítésére, szolgáltatásaira, komponenseire, konfigurációjára és ismert sebezhetőségeire vonatkozó információkat.",
+        "B": "kizárólag a céges logó színkódjait."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 17
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A támadói szakértelem egyik legmagasabb szintje:",
+      "options": {
+        "A": "új sérülékenységek felfedezésének és új támadási módszerek kifejlesztésének képessége.",
+        "B": "kizárólag ismert tutorialok mechanikus követése."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 18
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az anyagi erőforrás a támadó számára azért fontos, mert...",
+      "options": {
+        "A": "információvá, szakértelemmé, eszközökké, humán erőforrássá és számítási kapacitássá alakítható.",
+        "B": "csak marketingkampányokra költhető."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 19
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A script kiddie-re az jellemző, hogy...",
+      "options": {
+        "A": "tipikusan limitált szakértelemmel és erőforrásokkal rendelkezik.",
+        "B": "mindig államilag támogatott támadó."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 20
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kiberbűnözői szervezet tipikus motivációja:",
+      "options": {
+        "A": "gazdasági haszonszerzés.",
+        "B": "elsősorban akadémiai publikációk írása."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 21
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az állam által szponzorált támadó szervezetre jellemző, hogy...",
+      "options": {
+        "A": "nagyon fejlett információgyűjtő képességgel, nagyon fejlett szakértelemmel és nagyon gazdag erőforrásokkal rendelkezik.",
+        "B": "csak hirtelen felindulásból és rövid távon támad."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 22
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Célzott támadás esetén...",
+      "options": {
+        "A": "az áldozat nem véletlenszerűen választott, a támadás speciális eszközökkel, rejtőzködve és hosszan tartó jelenléttel történhet.",
+        "B": "a támadó véletlenszerűen próbál ki bármit, testreszabás nélkül."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 23
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A Stuxnet azért fontos példa, mert...",
+      "options": {
+        "A": "célzott, kifinomult malware volt, több 0-day exploitot és hamis digitális aláírást használt, és fizikai károkat okozott ipari környezetben.",
+        "B": "egy egyszerű spamküldő féreg volt, amely csak e-maileket küldött."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 24
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az IT rendszerekben létező gyengeségek típusai között szerepelnek...",
+      "options": {
+        "A": "műszaki, fizikai, üzemeltetési és személyi gyengeségek.",
+        "B": "csak matematikai és esztétikai gyengeségek."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 25
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A technikai sebezhetőségek egyik fontos oka:",
+      "options": {
+        "A": "a rendszerek komplexitása és a hibamentes tervezés/megvalósítás korlátai.",
+        "B": "az, hogy minden fejlesztő rosszindulatú."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 26
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A felelősségteljes közzététel (responsible disclosure) lényege:",
+      "options": {
+        "A": "először értesítik a gyártót/üzemeltetőt, adnak ésszerű javítási határidőt, majd később hozzák nyilvánosságra a hibát.",
+        "B": "a hiba azonnali publikálása minden előzetes értesítés nélkül."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 27
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A sebezhetőségi információk nyilvánosságra hozatala hasznos lehet, mert...",
+      "options": {
+        "A": "ösztönzi a gyártókat és üzemeltetőket a hibák komoly kezelésére, és segíti a védekezést.",
+        "B": "mindig csak a támadóknak kedvez, a védőknek soha."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 28
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A zero-day sebezhetőség...",
+      "options": {
+        "A": "már felfedezett, de még nem bejelentett és nem nyilvános hiba.",
+        "B": "olyan hiba, amelyre már mindenhol telepítették a javítást."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 29
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A zero-day sebezhetőségek azért veszélyesek, mert...",
+      "options": {
+        "A": "a potenciális áldozatok nem tudnak időben felkészülni az ellenük irányuló támadásokra.",
+        "B": "csak laboratóriumi környezetben léteznek."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 30
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Biztonsági mechanizmusokból a diasor szerint léteznek...",
+      "options": {
+        "A": "műszaki, fizikai, üzemeltetési és személyi mechanizmusok.",
+        "B": "csak titkosítási mechanizmusok."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 31
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az etika azért fontos az IT biztonságban, mert...",
+      "options": {
+        "A": "sok helyzetben nehéz egyértelmű igen/nem választ adni arra, mi helyes és mi helytelen.",
+        "B": "a biztonsági mérnökök munkájának nincsen társadalmi hatása."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 32
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Potenciális etikai probléma lehet például...",
+      "options": {
+        "A": "az etikus hackelés, a sebezhetőségi információk nyilvánosságra hozatala vagy a „jószándékú” malware kérdése.",
+        "B": "egy billentyűzet kiosztásának megválasztása."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 33
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az IT biztonság nehéz, mert...",
+      "options": {
+        "A": "szándékos támadóval szemben kell védekezni, sok a komponens, a leggyengébb láncszem dönt, és a biztonság sokszor konfliktusban van a teljesítménnyel/kényelemmel.",
+        "B": "a számítógépes rendszerek valójában teljesen egyszerűek."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 34
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kriptográfia...",
+      "options": {
+        "A": "algoritmikus módszerek tárháza információbiztonsági szolgáltatások megvalósítására.",
+        "B": "kizárólag üzenetek rövidítésére szolgáló adattömörítési eljárás."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 35
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Titkosítás gyakorlati alkalmazása tipikusan...",
+      "options": {
+        "A": "bizalmasság biztosítására szolgál, például adattárolásnál vagy kommunikáció védelménél.",
+        "B": "csak képek esztétikai javítására használható."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 36
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A Kerckhoffs-elv lényege:",
+      "options": {
+        "A": "a rendszer biztonsága ne a módszer titkosságán, hanem a kulcs titkosságán múljon.",
+        "B": "a rejtjelező algoritmust mindig titokban kell tartani."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 37
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A klasszikus rejtjelezés korszerű modelljében...",
+      "options": {
+        "A": "a kódoló/dekódoló módszer nyilvános lehet, a kulcs a titkos paraméter.",
+        "B": "maga az algoritmus a titok, kulcsra nincs szükség."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 38
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kulcs...",
+      "options": {
+        "A": "a nyilvánosan ismert algoritmus titkos paramétere.",
+        "B": "az a személy, aki elküldi az üzenetet."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 39
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kulcstér...",
+      "options": {
+        "A": "az összes lehetséges kulcs halmaza.",
+        "B": "az összes lehetséges nyílt szöveg halmaza."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 40
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Kimerítő kulcskeresés (brute force) alatt azt értjük, hogy...",
+      "options": {
+        "A": "végigpróbáljuk a kulcstér összes lehetséges kulcsát.",
+        "B": "a nyílt szöveg minden szavát szótárból fordítjuk."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 41
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A brute force támadást gyakorlatilag kivitelezhetetlenné úgy tehetjük, hogy...",
+      "options": {
+        "A": "elég nagy kulcsteret használunk.",
+        "B": "elég hosszú fájlnevet adunk a titkosított állománynak."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 42
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A mono-alfabetikus helyettesítés annak ellenére törhető, hogy nagy a kulcstere, mert...",
+      "options": {
+        "A": "a természetes nyelv betűgyakoriságai és mintázatai kiszivárognak a rejtett szövegben.",
+        "B": "minden betű ugyanarra a betűre cserélődik."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 43
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A mono-alfabetikus helyettesítés feltöréséhez fontos feltételezés, hogy...",
+      "options": {
+        "A": "a támadó ismeri vagy becsülni tudja a használt nyelv statisztikai jellemzőit.",
+        "B": "a támadó fizikailag hozzáfér a felhasználó monitorához."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 44
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A blokkrejtjelező...",
+      "options": {
+        "A": "rögzített méretű blokkokon működő rejtjelező primitív.",
+        "B": "mindig egyetlen bitet titkosít egyszerre."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 45
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A Feistel-struktúra lényege, hogy...",
+      "options": {
+        "A": "egy blokkot részekre bontva, több körben ismételt transzformációkkal valósít meg rejtjelezést.",
+        "B": "kizárólag publikus kulcsú titkosításhoz használható."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 46
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A Diffie–Hellman kulcscsere célja:",
+      "options": {
+        "A": "közös titok létrehozása két fél között egy nyilvános csatornán.",
+        "B": "digitális aláírás létrehozása minden üzenetre."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 47
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A Diffie–Hellman biztonsága klasszikusan a...",
+      "options": {
+        "A": "diszkrét logaritmus probléma nehézségéhez kapcsolódik.",
+        "B": "prímtényezős felbontás nehézségéhez kapcsolódik."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 48
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A nyilvános kulcsú titkosítás fő ötlete:",
+      "options": {
+        "A": "a titkosításhoz és a visszafejtéshez külön kulcs tartozik.",
+        "B": "ugyanazt a titkos kulcsot osztjuk meg mindenkivel."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 49
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az RSA biztonsága tipikusan a...",
+      "options": {
+        "A": "nagy számok prímtényezős felbontásának nehézségéhez kapcsolódik.",
+        "B": "diszkrét Fourier-transzformáció nehézségéhez kapcsolódik."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 50
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kvantumszámítógépek azért veszélyesek az RSA-ra és az ECC-re, mert...",
+      "options": {
+        "A": "bizonyos kvantumalgoritmusok lényegesen felgyorsíthatják a mögöttes nehéz problémák megoldását.",
+        "B": "a kvantumszámítógép automatikusan minden adatot kitöröl."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 51
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A szimmetrikus kulcsú kriptográfia a kvantumveszély miatt...",
+      "options": {
+        "A": "nem tűnik el, de hosszabb kulcsokra lehet szükség.",
+        "B": "teljesen használhatatlanná válik."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 52
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A posztkvantum kriptográfia (PQC) célja:",
+      "options": {
+        "A": "olyan algoritmusok használata, amelyek kvantumszámítógép ellen is biztonságosak.",
+        "B": "a klasszikus számítógépek lecserélése kvantumgépekre."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 53
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A „harvest now, decrypt later” probléma azt jelenti, hogy...",
+      "options": {
+        "A": "a támadó ma eltárolja a titkosított forgalmat, hogy később – erősebb eszközökkel – visszafejtse.",
+        "B": "a támadó csak a már visszafejtett adatokat tudja eltárolni."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 54
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A QKD (kvantum-kulcsszétosztás) lényege:",
+      "options": {
+        "A": "kvantumjelenségek segítségével lehet közös kulcsot létrehozni úgy, hogy a lehallgatás észlelhető legyen.",
+        "B": "kvantumszámítógéppel automatikusan minden titkosított adatot feltörünk."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 55
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A BB84 protokoll működési elvének kulcsa:",
+      "options": {
+        "A": "a mérés megzavarja a kvantumállapotot, ezért a lehallgatás nyomot hagy.",
+        "B": "ugyanazt a kulcsot minden résztvevő előre postán megkapja."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 56
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az Enigma egy történelmi rejtjelező, amelyet...",
+      "options": {
+        "A": "a németek használtak a II. világháború idején.",
+        "B": "az ókori spártaiak használtak a peloponnészoszi háborúban."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 57
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A titkosító algoritmusokat egyik alapvető felosztás szerint...",
+      "options": {
+        "A": "szimmetrikus és aszimmetrikus, illetve blokkrejtjelező és kulcsfolyam-rejtjelező csoportokra oszthatjuk.",
+        "B": "csak hardveres és szoftveres csoportokra oszthatjuk."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 58
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A XOR művelet egyik fontos tulajdonsága:",
+      "options": {
+        "A": "önmaga inverze, ezért ugyanazzal a kulcsfolyammal vissza is fejthető.",
+        "B": "soha nem használható titkosításban."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 59
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kulcsfolyam-rejtjelezők lényege:",
+      "options": {
+        "A": "egy pszeudovéletlen kulcsfolyamot generálnak, amelyet a nyílt szöveggel tipikusan XOR-olunk.",
+        "B": "minden esetben fix méretű 128 bites blokkokat titkosítanak."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 60
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kulcsfolyam-generátor seed-je tipikusan...",
+      "options": {
+        "A": "kulcsból és gyakran nonce/IV jellegű értékből áll.",
+        "B": "csak a felhasználónév karaktereiből áll."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 61
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A blokkrejtjelezők esetén a „lavina-hatás” azt jelenti, hogy...",
+      "options": {
+        "A": "a bemenet kis változása a kimenet sok bitjének megváltozását okozza.",
+        "B": "a körök számával exponenciálisan nő a biztonság."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 62
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Blokkrejtjelezési módokra azért van szükség, mert...",
+      "options": {
+        "A": "a blokkrejtjelezők önmagukban csak fix hosszúságú blokkokat kezelnek, a gyakorlatban pedig hosszabb üzeneteket kell biztonságosan feldolgozni.",
+        "B": "a blokkrejtjelezők önmagukban nem igényelnek kulcsot."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 63
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "CBC módban az IV-vel szembeni fő követelmény, hogy...",
+      "options": {
+        "A": "a támadó számára megjósolhatatlan legyen.",
+        "B": "titkosabb legyen, mint maga a kulcs."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 64
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "CBC módban kitöltésre (padding) azért lehet szükség, mert...",
+      "options": {
+        "A": "a bemenet hossza nem feltétlenül többszöröse a blokk-méretnek.",
+        "B": "a CBC csak ASCII karaktereket tud kezelni."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 65
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "CBC módban a dekódolás...",
+      "options": {
+        "A": "a blokkrejtjelező dekódoló (D) algoritmusát használja.",
+        "B": "a blokkrejtjelező kódoló (E) algoritmusát használja minden lépésben."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 66
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A nyilvános kulcsú titkosítás fő előnye:",
+      "options": {
+        "A": "nem kell előre közös titkos kulcsot megosztani a titkosításhoz.",
+        "B": "sokkal gyorsabb, mint minden szimmetrikus titkosítás."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 67
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A nyilvános kulcsú rendszerek biztonsága általában...",
+      "options": {
+        "A": "valamilyen nehéz matematikai problémához redukálható.",
+        "B": "attól függ, milyen hosszú a felhasználónév."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 68
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kriptográfiai hash-függvény...",
+      "options": {
+        "A": "rögzített hosszúságú lenyomatot készít egy tetszőleges hosszúságú bemenetből.",
+        "B": "visszaállítható, veszteségmentes tömörítés."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 69
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A három klasszikus hash-biztonsági követelmény:",
+      "options": {
+        "A": "előkép-ellenállás, második előkép-ellenállás, ütközés-ellenállás.",
+        "B": "titkosság, tömöríthetőség, aláírhatóság."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 70
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Előkép-ellenállás azt jelenti, hogy...",
+      "options": {
+        "A": "nehéz olyan bemenetet találni, amelynek hash-e egy előre megadott érték.",
+        "B": "nehéz két különböző bemenetet találni azonos hash-sel."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 71
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Ütközés-ellenállás azt jelenti, hogy...",
+      "options": {
+        "A": "nehéz két különböző bemenetet találni, amelyeknek azonos a hash értéke.",
+        "B": "a hash soha nem lehet rövidebb 1024 bitnél."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 72
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Egy n bites hash-függvénynél a brute force ütközéskeresés komplexitása tipikusan...",
+      "options": {
+        "A": "nagyságrendileg 2^(n/2).",
+        "B": "nagyságrendileg 2^n minden esetben."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 73
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A MAC-függvény célja:",
+      "options": {
+        "A": "integritásvédelem és eredethitelesítés közös titok segítségével.",
+        "B": "bizalmasság biztosítása nyilvános kulccsal."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 74
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A digitális aláírás abban különbözik a MAC-től, hogy...",
+      "options": {
+        "A": "harmadik fél számára is ellenőrizhető, és letagadhatatlanságot is adhat.",
+        "B": "mindig szimmetrikus kulcsot használ."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 75
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A hash-and-sign paradigma motivációja:",
+      "options": {
+        "A": "nagy üzenetek helyett azok hash-ét írjuk alá, így hatékonyabb az aláírás.",
+        "B": "hogy ne kelljen hash-függvényt használni."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 76
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Hibrid rejtjelezés esetén...",
+      "options": {
+        "A": "egy szimmetrikus és egy aszimmetrikus primitívet kombinálunk: a szimmetrikus kulcsot aszimmetrikusan védjük, az adatot szimmetrikusan titkosítjuk.",
+        "B": "egyszerre használunk kulcsfolyam-rejtjelezőt és blokkrejtjelezőt pusztán „nagyobb biztonság” miatt."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 77
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A KEM (kulcs-beágyazás) mechanizmus lényege:",
+      "options": {
+        "A": "egy véletlen szimmetrikus kulcs biztonságos becsomagolása/encapsulálása a címzett számára.",
+        "B": "egy nyílt szöveg tömörítése átvitel előtt."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 78
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Kulcsszármaztató módszerekre azért van szükség, mert...",
+      "options": {
+        "A": "nem minden bemeneti titok alkalmas közvetlenül kulcsként való használatra.",
+        "B": "a modern rendszerekben már nincs szükség kulcsokra."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 79
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "„Erős” titokból kulcsszármaztatáskor tipikusan...",
+      "options": {
+        "A": "kriptográfiai KDF-et használunk az anyag egyenletes, megfelelő formájú kulccsá alakítására.",
+        "B": "egyszerűen levágjuk a titok első 8 karakterét."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 80
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Jelszóból származtatott kulcs esetén célszerű...",
+      "options": {
+        "A": "lassú, sózott KDF-et használni, hogy a brute force és rainbow table jellegű támadások drágábbak legyenek.",
+        "B": "a jelszót változtatás nélkül AES-kulcsként használni."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 81
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A valódi véletlen számokat a gyakorlatban azért nem használjuk mindenre közvetlenül, mert...",
+      "options": {
+        "A": "korlátozottan és lassabban állnak rendelkezésre, ezért gyakran PRNG/CSPRNG épül rájuk.",
+        "B": "valójában nem is léteznek."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 82
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Egy álvéletlen-generátor (PRNG/CSPRNG)...",
+      "options": {
+        "A": "egy rövid, kellően entrópiadús seed-ből hosszabb, nehezen megjósolható bitfolyamot állít elő.",
+        "B": "mindig teljesen determinisztikus és ezért biztonságra alkalmatlan."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 83
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A bit-commitment sémák két kulcstulajdonsága:",
+      "options": {
+        "A": "hiding és binding.",
+        "B": "stretching és salting."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 84
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az üzenethitelesítés azt jelenti, hogy az üzenet fogadója...",
+      "options": {
+        "A": "megbízhatóan meg tudja állapítani, ki az üzenet küldője és/vagy hogy az üzenet hiteles forrásból származik.",
+        "B": "automatikusan bizalmasságot is kap."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 85
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A következő művelet eredménye helyesen:",
+      "options": {
+        "A": "5e284c2549f16eef43103431253d1042 XOR 57ec3ef6c5b9ead77efbd77c8181f3c4 = 09c4efca25aaf0423debe34da4bce386",
+        "B": "5e284c2549f16eef43103431253d1042 XOR 57ec3ef6c5b9ead77efbd77c8181f3c4 = 8e73ff8660f44af9ce880a5893594b4c"
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 86
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Nyilvános kulcsú tanúsítványokra azért van szükség, mert...",
+      "options": {
+        "A": "össze kell kötni egy identitást egy nyilvános kulccsal hiteles módon.",
+        "B": "a publikus kulcsokat mindig titokban kell tartani."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 87
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Egy nyilvános kulcsú tanúsítvány tipikus elemei:",
+      "options": {
+        "A": "alany (subject), nyilvános kulcs, kibocsátó (issuer), érvényesség, aláírás.",
+        "B": "felhasználónév, jelszó, bankkártyaszám, IP-cím."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 88
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A CA (Certificate Authority) feladata:",
+      "options": {
+        "A": "tanúsítványok kibocsátása és aláírása, a kulcs–identitás kapcsolat hitelesítése.",
+        "B": "az összes privát kulcs tárolása minden felhasználó helyett."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 89
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A CA-kban azért bízunk, mert...",
+      "options": {
+        "A": "a rendszerben gyökértanúsítványként vagy megbízható láncon keresztül előre megbízhatóként vannak kezelve.",
+        "B": "minden CA szükségszerűen tévedhetetlen."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 90
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A tanúsítvány életciklusának tipikus fázisai:",
+      "options": {
+        "A": "igénylés/kibocsátás, használat, megújítás vagy lejárat, esetleges visszavonás.",
+        "B": "telepítés, tömörítés, titkosítás, archiválás."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 91
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Privát kulcsot legbiztonságosabban úgy érdemes védeni, hogy...",
+      "options": {
+        "A": "lehetőleg HSM-ben/smart cardon vagy erősen védett, titkosított kulcstárban tartjuk, és a kulcsot nem olvassuk ki feleslegesen.",
+        "B": "sima szövegfájlban tároljuk az asztalon."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 92
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Egy tanúsítványt lejárat előtt azért vonhatnak vissza, mert...",
+      "options": {
+        "A": "kompromittálódott a privát kulcs, megváltozott az alany adata, vagy hibás volt a kiadás.",
+        "B": "a tanúsítvány túl gyorsan ellenőrizhető."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 93
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A visszavonási állapot ellenőrzésére tipikusan...",
+      "options": {
+        "A": "CRL-t vagy OCSP-t használunk.",
+        "B": "csak WHOIS lekérdezést használunk."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 94
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Hierarchikus PKI alatt azt értjük, hogy...",
+      "options": {
+        "A": "gyökér- és köztes hitelesítésszolgáltatók lánca épül egymásra.",
+        "B": "minden tanúsítványt ugyanazzal a privát kulccsal írnak alá."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 95
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A tanúsítvány-lánc ellenőrzésekor azt vizsgáljuk, hogy...",
+      "options": {
+        "A": "érvényes-e az aláírási lánc egy megbízható gyökérig, és a lánc elemei érvényesek-e.",
+        "B": "a tanúsítvány fájlneve elég hosszú-e."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 96
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Amikor azt mondjuk, hogy a TLS biztonságos csatornát ad két távoli félnek, ez azt jelenti, hogy...",
+      "options": {
+        "A": "bizalmasságot, integritást és tipikusan hitelesítést biztosít a kommunikációhoz.",
+        "B": "csak a késleltetést csökkenti a hálózaton."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 97
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A TLS Record Protocol fő feladata:",
+      "options": {
+        "A": "az alkalmazási adatok védett továbbítása.",
+        "B": "a szerver fizikai címének meghatározása."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 98
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A TLS Handshake fő feladata:",
+      "options": {
+        "A": "a felek egyeztetése, hitelesítése és a kulcsanyag kialakítása.",
+        "B": "a HTTP státuszkód kiválasztása."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 99
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A TLS 1.2-ig a handshake többféle kulcscserét támogathatott, például...",
+      "options": {
+        "A": "RSA-t és (EC)DHE-alapú megoldásokat.",
+        "B": "kizárólag one-time padet."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 100
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A finished üzenetek szerepe a TLS handshake-ben:",
+      "options": {
+        "A": "igazolják, hogy mindkét fél ugyanazt a handshake-transzkriptet és kulcsanyagot látja.",
+        "B": "az IP-címek cseréjét végzik el."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 101
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A TLS Record üzenetformátuma tipikusan tartalmaz...",
+      "options": {
+        "A": "content type-ot, verziót, hossz mezőt és a védett payloadot.",
+        "B": "processzorszámot és monitorfelbontást."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 102
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A gyakorlatban a kriptográfiát használó rendszerek sok hibája...",
+      "options": {
+        "A": "inkább mérnöki, implementációs vagy konfigurációs hiba, mintsem a primitív matematikai törése.",
+        "B": "abból ered, hogy a matematika elvileg teljesen hibás."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 103
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A CVE...",
+      "options": {
+        "A": "nyilvánosan azonosított sebezhetőségek szabványos azonosítórendszere.",
+        "B": "egy titkos fejlesztői hibakód, amit csak a gyártó lát."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 104
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Biztonságos szoftvert fejleszteni nehéz, mert...",
+      "options": {
+        "A": "nagy a komplexitás, korlátozottak az erőforrások, és sokféle hiba/sebezhetőség jelenhet meg.",
+        "B": "a fordítók eleve minden hibát kijavítanak."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 105
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A Microsoft SDL tipikus fázisai közé tartozik...",
+      "options": {
+        "A": "a tréning, követelmények, tervezés, implementáció, verifikáció, kiadás és a kiadás utáni válasz.",
+        "B": "csak a kiadás utáni marketing és a felhasználói kézikönyv."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 106
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az SDL-ben a személyzetnek...",
+      "options": {
+        "A": "definiált szerepeket és feladatokat kell ellátnia a biztonsági tevékenységek támogatására.",
+        "B": "nincs szüksége külön felelősségekre."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 107
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az economy of mechanism elv azt mondja, hogy...",
+      "options": {
+        "A": "a biztonsági mechanizmus legyen egyszerű és lehetőleg kis komplexitású.",
+        "B": "a biztonság annál jobb, minél bonyolultabb."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 108
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A fail-safe defaults elv lényege:",
+      "options": {
+        "A": "alapértelmezetten tiltsunk, és csak azt engedjük, amit kifejezetten szabad.",
+        "B": "alapértelmezetten mindent engedjünk, és majd utólag szűrjünk."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 109
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A complete mediation elv azt mondja, hogy...",
+      "options": {
+        "A": "minden hozzáférést ellenőrizni kell, nem csak az elsőt.",
+        "B": "elég belépéskor egyszer ellenőrizni."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 110
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A separation of privilege elv lényege:",
+      "options": {
+        "A": "bizonyos műveletekhez több, egymástól független feltétel/jog szükséges.",
+        "B": "minden művelethez csak egyetlen admin kell."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 111
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A least privilege elv:",
+      "options": {
+        "A": "minden entitás csak a minimálisan szükséges jogosultságot kapja.",
+        "B": "a rendszergazda mindig mindenki helyett dolgozik."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 112
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az open design elv lényege, hogy...",
+      "options": {
+        "A": "a rendszer biztonságát ne a rendszer komplexitása vagy titkos működése adja, hanem a beépített biztonsági mechanizmusok.",
+        "B": "a rendszer terveit mindig kötelező publikusan közzétenni."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 113
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A least common mechanism elv célja:",
+      "options": {
+        "A": "a közösen használt mechanizmusok minimalizálása, mert a megosztás növelheti a kockázatot.",
+        "B": "hogy minden erőforrást ugyanazon az admin-fiókon keresztül érjünk el."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 114
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A psychological acceptability elv szerint...",
+      "options": {
+        "A": "a biztonsági mechanizmusok ne terheljék túl a felhasználót.",
+        "B": "a felhasználókat rá kell kényszeríteni minél több kényelmetlen lépésre."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 115
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A szoftver támadási felülete...",
+      "options": {
+        "A": "azoknak a belépési pontoknak, interfészeknek és elérhető funkcióknak az összessége, amelyeken keresztül támadható.",
+        "B": "kizárólag a GUI kinézete."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 116
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Ha a szoftver hibás bemenetet észlel, helyesen akkor jár el, ha...",
+      "options": {
+        "A": "elutasítja a bemenetet és naplózza az eseményt.",
+        "B": "megpróbálja automatikusan „kitalálni”, mit akart a támadó."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 117
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Naplózáskor fontos információ lehet például...",
+      "options": {
+        "A": "ki, mikor, mit, milyen eredménnyel próbált végrehajtani, és milyen kontextusban.",
+        "B": "a fejlesztő kedvenc böngészője."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 118
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A naplóbejegyzések azért fontosak, mert...",
+      "options": {
+        "A": "segítik a számonkérhetőséget, a hibakeresést és az incidensvizsgálatot.",
+        "B": "csak tárhelyet foglalnak, ezért nincs hasznuk."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 119
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Olyan adat, amit nem szabad naplózni:",
+      "options": {
+        "A": "jelszó, privát kulcs vagy más érzékeny titok.",
+        "B": "kérés időbélyege."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 120
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A statikus elemzés egyik előnye, hogy...",
+      "options": {
+        "A": "már a fejlesztési folyamat korai szakaszában alkalmazható.",
+        "B": "csak meghatározott futási körülmények között jelentkező hibákat talál."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 121
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A statikus elemzés egyik hátránya, hogy...",
+      "options": {
+        "A": "nincs futásidejű információja, ezért sok hamis pozitívja lehet.",
+        "B": "mindig hozzáférést igényel a futó szerver memóriaállapotához."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 122
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A dinamikus elemzés egyik előnye:",
+      "options": {
+        "A": "futás közben vizsgálja a programot, ezért ténylegesen megvalósuló viselkedéseket láthat.",
+        "B": "már a forráskód megírása előtt lefuttatható."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 123
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A dinamikus elemzés egyik tipikus hátránya:",
+      "options": {
+        "A": "alacsony lehet a kódlefedettsége.",
+        "B": "mindig kell hozzá az eredeti forráskód és a fordítórendszer."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 124
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A fuzzing alapötlete:",
+      "options": {
+        "A": "véletlenszerűen vagy heurisztikusan generált bemenetekkel próbáljuk hibára vagy sérülékenységre késztetni a programot.",
+        "B": "kézzel végigolvasunk minden forrásfájlt."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 125
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A penetrációs tesztelés célja:",
+      "options": {
+        "A": "a sérülékenységek gyakorlati kihasználhatóságának felmérése ellenőrzött keretek között.",
+        "B": "minden körülmények között az éles rendszer leállítása."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 126
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A penteszt fő fázisai közé tipikusan tartozik...",
+      "options": {
+        "A": "a tervezés, felderítés, támadás/kihasználás, dokumentálás/riport.",
+        "B": "a hardvergyártás, logótervezés és márkastratégia."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 127
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A security response és az incidenskezelés között az a különbség, hogy...",
+      "options": {
+        "A": "a security response inkább a biztonsági probléma szakmai kezelésére, javítására és kommunikációjára fókuszál, míg az incidenskezelés a konkrét működési incidens teljes kezelésére.",
+        "B": "a kettő teljesen ugyanaz, minden körülmény között."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 128
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A sérülékenységek felelős nyilvánosságra hozatala azt jelenti, hogy...",
+      "options": {
+        "A": "a felfedező először jelzi a hibát, időt hagy a javításra, majd kontrolláltan publikál.",
+        "B": "a hibát azonnal közzéteszi exploitkóddal együtt."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 129
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Egy sérülékenység életciklusához tartozhat...",
+      "options": {
+        "A": "a felfedezés, elemzés, bejelentés, javítás, publikálás és a védekezés.",
+        "B": "kizárólag a végleges eltitkolás."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 130
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A Threat, Risk, Vulnerability analysis célja...",
+      "options": {
+        "A": "a biztonsági mechanizmusok beépítésének indokait dokumentálni és rendszerezetten felmérni a kockázatokat.",
+        "B": "kizárólag a támadók földrajzi helyének rögzítése."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 131
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A puffertúlcsordulás problémája leginkább...",
+      "options": {
+        "A": "alacsony szintű, kézi memóriakezelést használó nyelveket, például a C/C++-t érinti.",
+        "B": "csak a Python nyelvet érinti."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 132
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A stack frame-ben tipikusan...",
+      "options": {
+        "A": "a lokális változók a stack-en kapnak helyet, a paraméterek és a visszatérési cím a hívási konvenció szerint a frame részei.",
+        "B": "sem paraméter, sem lokális változó nem lehet a stack-en."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 133
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A stack overflow alapötlete:",
+      "options": {
+        "A": "a puffer határán túlírással a környező memóriaelemeket is felülírjuk.",
+        "B": "a processzor túlmelegítése."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 134
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Stack overflow támadásnál a támadó kódja tipikusan...",
+      "options": {
+        "A": "a stacken, környezeti változókban vagy más írható memóriaterületen is elhelyezhető lehet.",
+        "B": "csak a videokártya BIOS-ában helyezhető el."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 135
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A visszatérési cím mellett stack overflow során felülírható például...",
+      "options": {
+        "A": "mentett frame pointer vagy más vezérléshez kapcsolódó adat is.",
+        "B": "kizárólag a monitor fényereje."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 136
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Más memória-korrupciós támadás lehet például...",
+      "options": {
+        "A": "heap overflow vagy use-after-free.",
+        "B": "SQL join."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 137
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A shellkód...",
+      "options": {
+        "A": "a kihasználás után futtatni kívánt, általában rövid támadói gépi kód.",
+        "B": "a Linux shell konfigurációs fájlja."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 138
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A NOP sled...",
+      "options": {
+        "A": "olyan NOP utasítássorozat, amely megkönnyíti, hogy a vezérlés a shellkódba csússzon.",
+        "B": "a stack védelmére szolgáló hardverregiszter."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 139
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A shellkódokban a 0x00 bájt kerülése azért fontos, mert...",
+      "options": {
+        "A": "sok sérülékeny program C-stringként kezeli a bemenetet, és a null bájt idő előtt lezárhatja azt.",
+        "B": "a processzor null bájtot nem tud végrehajtani."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 140
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Stack overflow ellen tipikus védelmek:",
+      "options": {
+        "A": "stack canary, DEP/NX, ASLR.",
+        "B": "csak RAID és UPS."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 141
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kanári alapú védelem úgy nehezíti a támadást, hogy...",
+      "options": {
+        "A": "a visszatérési cím előtt ellenőrző értéket helyez el, és a túlcsordulás ezt tipikusan elrontja.",
+        "B": "titkosítja a stack minden bitjét."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 142
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Melyik memóriaelem felülírása vezethet vezérlésátvételhez?",
+      "options": {
+        "A": "a visszatérési cím.",
+        "B": "egy lokális változó kezdeti értéke önmagában."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 143
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "DEP bekapcsolása esetén mi nem lehetséges?",
+      "options": {
+        "A": "a stacken tárolt shellcode közvetlen futtatása.",
+        "B": "a stacken tárolt adatok módosítása."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 144
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A TOCTOU sebezhetőség akkor keletkezik, ha...",
+      "options": {
+        "A": "az ellenőrzés és a használat között megváltozik az erőforrás állapota.",
+        "B": "az ellenőrzés hibás logikai feltételt használ."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 145
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az ASLR védelem alapötlete:",
+      "options": {
+        "A": "a különböző memóriaszegmensek címeinek véletlenszerű eltolása minden futtatáskor.",
+        "B": "a memóriában tárolt adatok titkosítása futás közben."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 146
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Buffer overflow kihasználása során gyakran...",
+      "options": {
+        "A": "a sérülékeny program összeomlik, ha a kihasználás nem sikeres vagy nincs stabil exploit.",
+        "B": "a támadó elsődleges célja mindig az, hogy a program feltűnés nélkül fusson tovább mindenáron."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 147
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Egy URL tipikus részei:",
+      "options": {
+        "A": "séma/protokoll, hoszt/domain, opcionális port, útvonal, query, fragment.",
+        "B": "csak domain és jelszó."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 148
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A leggyakoribb webbiztonsági problémák közé tartoznak...",
+      "options": {
+        "A": "az injection típusú hibák, XSS, hibás hozzáféréskezelés és hasonló OWASP-topikok.",
+        "B": "kizárólag a lassú CSS-betöltés."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 149
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az OWASP projekt célja:",
+      "options": {
+        "A": "a webalkalmazás-biztonság fejlesztése, tudásanyagok és ajánlások készítése.",
+        "B": "zárt forráskódú exploitok árusítása."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 150
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Egy támadó első lépése egy szerver ellen általában...",
+      "options": {
+        "A": "a felderítés (reconnaissance), információgyűjtés.",
+        "B": "a hardver azonnali fizikai megsemmisítése."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 151
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az injection támadások általános problémája:",
+      "options": {
+        "A": "a támadó bemenetét a rendszer utasításként/parancsként értelmezi.",
+        "B": "a HTML túl hosszú lesz."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 152
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "SQL injection példája lehet...",
+      "options": {
+        "A": "egy olyan input, amely módosítja az eredeti SQL-lekérdezés logikáját, például autentikáció megkerülésére.",
+        "B": "egy CSS szabály beszúrása az adatbázisba."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 153
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "SQL injection ellen helyes védekezés:",
+      "options": {
+        "A": "paraméterezett lekérdezések és megfelelő inputkezelés használata.",
+        "B": "a hibaüzenetek lefordítása angolra."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 154
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kliensoldali biztonsági határt tipikusan a...",
+      "options": {
+        "A": "same-origin/origin modell adja.",
+        "B": "felhasználó monitorának mérete adja."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 155
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A Same Origin Policy (SOP) lényege:",
+      "options": {
+        "A": "korlátozza, hogy egy originből származó script mit érhet el más originből.",
+        "B": "minden weboldal között teljes hozzáférést enged."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 156
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Egy origin a kliens oldali biztonsági modellben...",
+      "options": {
+        "A": "sémából, domainből és portból áll.",
+        "B": "security headerből, protokollból és teljes URL-ből áll."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 157
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A SOP XMLHttpRequest esetén elsősorban azt limitálja, hogy...",
+      "options": {
+        "A": "egy oldal milyen más originű erőforrásokhoz férhet hozzá olvasási szinten.",
+        "B": "a böngésző ki tudja-e rajzolni a HTML-t."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 158
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "XSS támadásról akkor beszélünk, amikor...",
+      "options": {
+        "A": "a támadó JavaScript-kódot futtat egy másik origin vagy alkalmazás kontextusában.",
+        "B": "a támadó közvetlenül root jogot szerez az operációs rendszerben."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 159
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az XSS fő típusai:",
+      "options": {
+        "A": "stored, reflected és DOM-based.",
+        "B": "RSA, ECC és AES."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 160
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "XSS ellen tipikus védekezés:",
+      "options": {
+        "A": "kimenet-kontextus szerinti escaping/encoding, inputkezelés és CSP használata.",
+        "B": "csak a háttérszín megváltoztatása."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 161
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A Content Security Policy (CSP) szerepe XSS ellen:",
+      "options": {
+        "A": "csökkentheti az XSS támadások hatását azzal, hogy korlátozza a betölthető és futtatható erőforrásokat.",
+        "B": "teljes mértékben megakadályoz minden kódfuttatást minden XSS esetén."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 162
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A komment karakterek SQL injection során arra jók, hogy...",
+      "options": {
+        "A": "az eredeti SQL lekérdezés egyes részeit „kikapcsolják”.",
+        "B": "segítségükkel a támadó jogot szerezzen natív gépi kód futtatására az adatbázisban."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 163
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az alábbiak közül az URL mely részét dolgozza fel a szerver oldali komponens?",
+      "options": {
+        "A": "a használt protokoll metódust és a szerver felé elküldött útvonal/query részeket, nem pedig a fragmenst.",
+        "B": "a fragment azonosítót."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 164
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A biztonsági tesztelés célja...",
+      "options": {
+        "A": "a sérülékenységek feltárása és a biztonsági funkciók megfelelő működésének biztosítása.",
+        "B": "annak garantálása, hogy a rendszer örökre védett maradjon minden támadással szemben."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 165
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A biztonsági tesztelés megközelítései közé tartozhat...",
+      "options": {
+        "A": "manuális és automatizált, statikus és dinamikus, white-box és black-box.",
+        "B": "csak manuális módszer."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 166
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A manuális és az automatizált tesztelés közti különbség:",
+      "options": {
+        "A": "a manuális tesztelés emberi elemzésre épít, az automatizált eszközökkel skálázható és ismételhető.",
+        "B": "a kettő teljesen ugyanaz."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 167
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A statikus és a dinamikus tesztelés közti különbség:",
+      "options": {
+        "A": "a statikus nem vagy korlátozottan futtatja a programot, a dinamikus futás közben vizsgál.",
+        "B": "a statikus mindig gyorsabb és minden hibát megtalál."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 168
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A white-box és black-box tesztelés közti különbség:",
+      "options": {
+        "A": "white-boxnál belső ismeret is van a rendszerről, black-boxnál külső nézőpontból tesztelünk.",
+        "B": "white-boxnál nincs hozzáférés a rendszerhez."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 169
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A tesztelési folyamat tipikus lépései:",
+      "options": {
+        "A": "tervezés, tesztkialakítás, implementáció, kivitelezés, értékelés.",
+        "B": "specifikáció, marketing, értékesítés, lezárás."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 170
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A biztonsági tesztelés tipikus kihívásai:",
+      "options": {
+        "A": "kódlefedettség, hamis pozitív/negatív találatok, környezeti komplexitás, szakértelemigény.",
+        "B": "hogy túl kevés a programozási nyelv a világon."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 171
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A manuális kódellenőrzés jellemzője:",
+      "options": {
+        "A": "mélyebb, szemantikus emberi megértést tud adni, de időigényes és nehezebben skálázható.",
+        "B": "mindig gyorsabb, mint minden automatizált eszköz."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 172
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az automatizált biztonsági tesztelés jellemzője:",
+      "options": {
+        "A": "jól ismételhető és CI/CD-be illeszthető, de nem lát mindent és lehet zajos.",
+        "B": "soha nem ad hamis pozitív találatot."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 173
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A tervek felülvizsgálatának célja:",
+      "options": {
+        "A": "már korán kiszúrni a tervezési szintű biztonsági problémákat.",
+        "B": "a futásidejű memóriafogyasztás pontos mérése."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 174
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A code review történhet úgy, hogy...",
+      "options": {
+        "A": "manuálisan fejlesztők/szakértők olvassák a kódot, illetve automatizált statikus eszközök is elemzik azt.",
+        "B": "kizárólag a felhasználók próbálgatják az oldalt."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 175
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A statikus elemzés egyik előnye:",
+      "options": {
+        "A": "már korán alkalmazható a fejlesztés során.",
+        "B": "csak meghatározott futási helyzetben jelentkező hibákat tud megtalálni."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 176
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A statikus elemzés egyik hátránya:",
+      "options": {
+        "A": "nincs futásidejű információja.",
+        "B": "nem alkalmazható forráskódra."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 177
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A dinamikus elemzés egyik hátránya:",
+      "options": {
+        "A": "alacsony lehet a kódlefedettsége.",
+        "B": "nem lehet futó programon végezni."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 178
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A fuzzing fő elve és általános munkafolyamata:",
+      "options": {
+        "A": "bemenetek generálása/mutálása, a célprogram futtatása, majd összeomlások/anomáliák detektálása és triage-olása.",
+        "B": "a forráskód kézi átírása véletlenszerűen."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 179
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "CI/CD folyamatban tipikusan alkalmazható biztonsági technikák:",
+      "options": {
+        "A": "SAST, dependency/SCA ellenőrzés, secret scanning, DAST, fuzzing.",
+        "B": "csak kézi penetrációs teszt évente egyszer."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 180
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A behatolási tesztelés célja:",
+      "options": {
+        "A": "kontrollált körülmények között demonstrálni és értékelni a támadhatóságot.",
+        "B": "a rendszer szolgáltatásainak végleges letiltása."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 181
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A behatolási tesztelés fő fázisai tipikusan:",
+      "options": {
+        "A": "tervezés, felderítés, kihasználás, dokumentálás/riport.",
+        "B": "fordítás, csomagolás, deploy, archiválás."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 182
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A biztonsági tesztelés keretében alkalmazott statikus programelemzési technikák előnye, hogy...",
+      "options": {
+        "A": "már a fejlesztési folyamat korai szakaszában alkalmazhatók.",
+        "B": "csak olyan sérülékenységeket tudnak azonosítani, amelyek kizárólag futás közben jelentkeznek."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 183
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A biztonsági tesztelés keretében végzett dinamikus programelemzés egyik hátránya, hogy...",
+      "options": {
+        "A": "alacsony lehet a kódlefedettsége.",
+        "B": "mindig hozzáférést igényel az eredeti forráskódhoz és a fordítási környezethez."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 184
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A SAST-eszközök hamis pozitív riasztásokat generálhatnak, mert...",
+      "options": {
+        "A": "nem feltétlenül rendelkeznek minden futási kontextusra és külső függőségre vonatkozó információval.",
+        "B": "csak azokat a hibákat észlelik, amelyeket a vizsgálat során aktívan kihasználnak."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 185
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az authentikáció (hitelesítés) célja:",
+      "options": {
+        "A": "a felhasználó kilétének hitelt érdemlő bizonyítása.",
+        "B": "annak meghatározása, melyik felhasználónak milyen jogosultságai vannak."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 186
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az authorization (engedélyezés) célja:",
+      "options": {
+        "A": "annak eldöntése, hogy egy már hitelesített entitás mit tehet meg.",
+        "B": "a felhasználó személyazonosságának bizonyítása."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 187
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az access control (hozzáférés-szabályzás) célja:",
+      "options": {
+        "A": "az engedélyezési szabályok tényleges kikényszerítése a rendszerben.",
+        "B": "kizárólag az eseménynapló törlése."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 188
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az accounting (naplózás) célja:",
+      "options": {
+        "A": "az események rögzítése számonkérhetőség és utólagos vizsgálat céljából.",
+        "B": "a felhasználó jelszavának visszafejtése."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 189
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az AAA rövidítés jelentése:",
+      "options": {
+        "A": "Authentication, Authorization/Access Control, Accounting.",
+        "B": "Availability, Anonymity, Assurance."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 190
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az authentikáció formái közé tartozik...",
+      "options": {
+        "A": "amit tudsz (jelszó), amid van (token/smart card), ami te vagy (biometria).",
+        "B": "amit streamelsz, amit lájkolsz, amit posztolsz."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 191
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A 2FA/MFA célja:",
+      "options": {
+        "A": "több, egymástól független faktor kombinálása a biztonság növelésére.",
+        "B": "hogy ugyanazt a jelszót kétszer írjuk be."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 192
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Jelszóalapú rendszereket tipikusan így lehet támadni:",
+      "options": {
+        "A": "brute force, szótáras támadás, phishing, credential stuffing, jelszó-újrafelhasználás.",
+        "B": "kizárólag monitor letakarásával."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 193
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Fejlesztőként jelszavakat helyesen úgy érdemes tárolni, hogy...",
+      "options": {
+        "A": "hash-eljük, sózzuk, lassítjuk/stretcheljük, és megfelelő KDF-et használunk.",
+        "B": "mindig visszafejthetően titkosítjuk őket az adatbázisban."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 194
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "„Ha egy webalkalmazást implementálunk, a jelszavakat mindig titkosítva kell tárolni az adatbázisban.”",
+      "options": {
+        "A": "Hamis",
+        "B": "Igaz"
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 195
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Felhasználóként jó jelszóválasztási gyakorlat:",
+      "options": {
+        "A": "egyedi, erős jelszavak használata, lehetőleg jelszókezelővel.",
+        "B": "ugyanazt a rövid jelszót használni mindenhol."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 196
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Birtokalapú hitelesítés példája:",
+      "options": {
+        "A": "smart card, hardvertoken vagy telefonos authenticator.",
+        "B": "családi név."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 197
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A birtokalapú hitelesítés hátránya lehet, hogy...",
+      "options": {
+        "A": "az eszköz elveszhet, ellopható vagy másolható lehet bizonyos esetekben.",
+        "B": "semmilyen körülmények között nem kerülhet illetéktelen kézbe."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 198
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az Access Control listák...",
+      "options": {
+        "A": "minden objektumhoz definiálják, ki mit csinálhat vele.",
+        "B": "a felhasználókhoz rendelik az összes lehetséges jelszót."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 199
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az engedélyezési modellben tipikusan...",
+      "options": {
+        "A": "szubjektumok, objektumok, műveletek és szabályok szerepelnek.",
+        "B": "csak egyetlen adminisztrátor és egyetlen fájl létezik."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 200
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Engedélyeket tipikusan...",
+      "options": {
+        "A": "objektumtulajdonosok, rendszergazdák vagy központi szabályok definiálhatnak, modelltől függően.",
+        "B": "kizárólag a végfelhasználó telefonja definiál."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 201
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A Discretionary Access Control (DAC) lényege:",
+      "options": {
+        "A": "az objektum tulajdonosa vagy kezelője maga is meghatározhat hozzáférési jogokat.",
+        "B": "kizárólag központi címkézés alapján, a tulajdonostól függetlenül működik."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 202
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Mandatory Access Control (MAC) esetében...",
+      "options": {
+        "A": "a szabályokat központilag, kötelező érvénnyel definiálják, és ezek mindenkire vonatkoznak.",
+        "B": "minden felhasználó saját maga dönt a hozzáférésről."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 203
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "„Mandatory Access Control esetében az adminisztrátor definiálja a szabályokat, amik kötelezően mindenkire vonatkoznak.”",
+      "options": {
+        "A": "Igaz",
+        "B": "Hamis"
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 204
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Linuxban a 755 jogosultság jelentése:",
+      "options": {
+        "A": "a tulajdonos rwx, a csoport r-x, mások r-x jogot kapnak.",
+        "B": "a tulajdonos csak olvas, mindenki más ír és futtat."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 205
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A setuid, setgid és sticky bit szerepe:",
+      "options": {
+        "A": "setuid/setgid speciális futtatási vagy öröklési viselkedést ad, sticky bit könyvtárban a törlést korlátozza.",
+        "B": "mindhárom kizárólag hálózati portszámot állít."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 206
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "„A smart kártyák biztonságosabbak, mint a proxy kártyák, mert nem lehet őket triviálisan másolni.”",
+      "options": {
+        "A": "Igaz",
+        "B": "Hamis"
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 207
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "„Az authentikáció célja, hogy meghatározza, melyik felhasználónak milyen jogosultságai vannak.”",
+      "options": {
+        "A": "Hamis",
+        "B": "Igaz"
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 208
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A malware olyan kód, amely...",
+      "options": {
+        "A": "szándékosan kárt okozhat vagy megzavarhatja az informatikai rendszer rendeltetését.",
+        "B": "csak e-mail mellékleteként képes terjedni."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 209
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A vírus...",
+      "options": {
+        "A": "gazdatestet igényel, és annak segítségével terjed/fut.",
+        "B": "nem igényel gazdatestet, autonóm önálló program."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 210
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Egy vírus gazdateste lehet...",
+      "options": {
+        "A": "egy képfájl vagy más fájl/program/adathordozó is.",
+        "B": "egy tűzfal."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 211
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A féreg (worm)...",
+      "options": {
+        "A": "önállóan működik, automatikusan terjedhet, és nem igényel gazdatestet.",
+        "B": "mindig manuális felhasználói telepítést igényel."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 212
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A trójai...",
+      "options": {
+        "A": "hasznosnak tűnő, de a háttérben rosszindulatú program.",
+        "B": "kizárólag dokumentumtömörítő algoritmus."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 213
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Időzített bombát általában melyik típusú rosszindulatú szoftver implementál?",
+      "options": {
+        "A": "trójai",
+        "B": "féreg"
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 214
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Célzott támadások esetében a támadók arra használják a rosszindulatú szoftvereket, hogy...",
+      "options": {
+        "A": "kémkedjenek vagy szabotázst hajtsanak végre.",
+        "B": "nagy mennyiségű kéretlen levelet küldjenek, és csak arra."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 215
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A rosszindulatú szoftverek témakörében a szignatúra...",
+      "options": {
+        "A": "egy fajta egyedi azonosító ismert rosszindulatú szoftver felismeréséhez.",
+        "B": "olyan tanúsítvány, amely legitim szoftvernek tetteti a malware-t."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 216
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A szignatúra-alapú detekció egyik fő kihívása:",
+      "options": {
+        "A": "az új vagy kicsit módosított malware gyakran elkerüli az észlelést.",
+        "B": "az, hogy a régi mintákat túl könnyű felismerni."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 217
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Mi a különbség az üzenethitelesítő kód (MAC) és a digitális aláírás között?",
+      "options": {
+        "A": "A MAC csak a fogadó számára bizonyítja az üzenet eredetének hitelességét, harmadik fél számára nem; a digitális aláírás viszont bárki számára ellenőrizhető.",
+        "B": "A MAC bizalmasságot is ad, a digitális aláírás pedig nem ellenőrizhető harmadik fél által."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 218
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Melyik kulcskezelési módszer biztonságosabb?",
+      "options": {
+        "A": "A kulcsot bontás ellenálló hardver modulban (pl. chip-kártya) tároljuk, és a modult használjuk a műveletekre, nem olvassuk ki belőle a kulcsot.",
+        "B": "A kulcsot titkosítva tároljuk egy fájlban, majd használat előtt kiolvassuk sima kulcsként a folyamat memóriájába."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 219
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Mit mond a pszichológiai elfogadhatóság elve?",
+      "options": {
+        "A": "A biztonsági mechanizmusok ne terheljék túl a felhasználót.",
+        "B": "A felhasználóknak el kell fogadniuk, hogy minél kellemetlenebb a védelem, annál jobb."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 220
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Mit értünk kompromittált állapot alatt egy IT rendszer esetében?",
+      "options": {
+        "A": "Nem kívánt állapotot, melyben bizonyos elvárt biztonsági követelmények nem teljesülnek.",
+        "B": "Olyan állapotot, melyben egy kívánt kompromisszum (trade-off) valósul meg."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 221
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A sebezhetőségekkel kapcsolatos információk nyilvános közzététele...",
+      "options": {
+        "A": "hasznos lehet, mert segíti az üzemeltetőket a releváns hibák időbeni kezelésében.",
+        "B": "minden körülmények között káros, ezért soha nem szabad nyilvánosságra hozni."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 222
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A kockázat (risk)...",
+      "options": {
+        "A": "egy fenyegetés bekövetkezéséből származó várható veszteség mértéke.",
+        "B": "egy potenciális támadás bekövetkezésének puszta valószínűsége."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 223
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "„A kriptográfia ...”",
+      "options": {
+        "A": "algoritmikus módszerek tárháza információbiztonsági szolgáltatások megvalósítására.",
+        "B": "egyiptomi sírkamrák falán található üzenetek titkosítási módszere."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 224
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Melyik memóriaelem felülírása vezethet vezérlésátvételhez?",
+      "options": {
+        "A": "A visszatérési cím.",
+        "B": "Egy lokális változó kezdeti értéke."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 225
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Mi a statikus elemzés egyik hátránya?",
+      "options": {
+        "A": "Nincs futásidejű információja.",
+        "B": "Nem talál ismert sérülékenységeket."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 226
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Hogyan kell kezelni egy sérült/hibás bemeneti adatot?",
+      "options": {
+        "A": "El kell utasítani és naplózni kell az eseményt.",
+        "B": "Meg kell próbálni automatikusan kijavítani."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 227
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Mi a különbség a Cross-Site Scripting (XSS) támadásban?",
+      "options": {
+        "A": "A támadó JavaScript-kódot futtat egy másik origin/alkalmazás kontextusában.",
+        "B": "A támadó eléri, hogy a saját JavaScript-kódja natív rendszerszintű futási jogot kapjon."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 228
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Milyen szerepe van a Content Security Policy-nek XSS ellen?",
+      "options": {
+        "A": "Csökkentheti az XSS támadások hatását.",
+        "B": "Teljes mértékben és minden esetben megakadályozza a támadást."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 229
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Mi a komment karakterek szerepe SQL injection támadás során?",
+      "options": {
+        "A": "Segítségükkel az eredeti SQL lekérdezés egyes részei „kikapcsolhatók”.",
+        "B": "Segítségükkel a támadó natív gépi kódot futtat az adatbázisban."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 230
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Miből áll az origin a kliens oldali biztonsági modellben?",
+      "options": {
+        "A": "Sémából, domainből és portból áll.",
+        "B": "Security headerből, protokollból és teljes URL-ből áll."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 231
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Az alábbiak közül az URL mely részét dolgozza fel a szerver oldali komponens?",
+      "options": {
+        "A": "A szerver felé küldött kérés releváns részeit, nem pedig a fragment azonosítót.",
+        "B": "A fragment azonosítót."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 232
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A biztonsági tesztelés célja...",
+      "options": {
+        "A": "a sérülékenységek feltárása és a biztonsági funkciók megfelelő működésének biztosítása.",
+        "B": "annak garantálása, hogy a rendszer teljesen védett legyen minden jövőbeli kibertámadással szemben."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 233
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A fuzzing alapötlete az, hogy...",
+      "options": {
+        "A": "véletlenszerűen vagy mutált bemeneti adatokkal tesztelje a szoftvert.",
+        "B": "átolvassa a forráskód utasításait."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 234
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "A SAST-eszközök hamis pozitív riasztásokat generálhatnak, mert...",
+      "options": {
+        "A": "lehet, hogy nem rendelkeznek a külső függőségekre és teljes futási kontextusra vonatkozó ismeretekkel.",
+        "B": "csak azokat a sérülékenységeket észlelik, amelyeket aktívan kihasználnak."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 235
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "Buffer overflow kihasználása során...",
+      "options": {
+        "A": "gyakran a program összeomlik, például szegmentációs hibával, ha a kihasználás nem stabil vagy védelem állítja meg.",
+        "B": "a támadó célja minden esetben, hogy a program észrevétlenül továbbfusson, és ez mindig sikerül."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 236
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "„DEP bekapcsolása esetén mi nem lehetséges?”",
+      "options": {
+        "A": "A stacken tárolt shellcode közvetlen futtatása.",
+        "B": "A stacken tárolt adatok módosítása."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 237
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "„TOCTOU sebezhetőség akkor keletkezik, ha...”",
+      "options": {
+        "A": "Az ellenőrzés és a használat között megváltozik az erőforrás állapota.",
+        "B": "Az ellenőrzés hibás logikai feltételt használ."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 238
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "„Mi az ASLR védelem alapötlete?”",
+      "options": {
+        "A": "A különböző memóriaszegmensek címeinek véletlenszerű eltolása minden futtatáskor.",
+        "B": "A memóriában tárolt adatok titkosítása futás közben."
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 239
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "„A smart kártyák biztonságosabbak, mint a proxy kártyák...”",
+      "options": {
+        "A": "Igaz",
+        "B": "Hamis"
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 240
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "„Az Access Control listák minden objecthez definiálják, ki mit csinálhat vele.”",
+      "options": {
+        "A": "Igaz",
+        "B": "Hamis"
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 241
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "„Az authentikáció célja, hogy meghatározza, melyik felhasználónak milyen jogosultságai vannak.”",
+      "options": {
+        "A": "Hamis",
+        "B": "Igaz"
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 242
+    },
+    {
+      "question_type": "multi_choice",
+      "question_title": "„Ha egy webalkalmazást implementálunk, a jelszavakat mindig titkosítva kell tárolni az adatbázisban.”",
+      "options": {
+        "A": "Hamis",
+        "B": "Igaz"
+      },
+      "answer": [
+        "A"
+      ],
+      "ID": 243
+    }
+  ]
+}
