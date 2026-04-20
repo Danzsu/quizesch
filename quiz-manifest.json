@@ -158,6 +158,14 @@
         "type": "Synthetic Questionnaire",
         "year": "2026"
       }
+    },
+    {
+    "fileName": "2026_ZH_it_biztonsag_predict.json",
+      "tags": {
+        "subject": "IT Biztonság",
+        "type": "Synthetic Questionnaire",
+        "year": "2026"
+      }
     }
   ],
   "availableTags": {
