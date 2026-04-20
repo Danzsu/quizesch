@@ -820,6 +820,219 @@
     from { opacity: 0; transform: translateY(-4px); }
     to   { opacity: 1; transform: translateY(0); }
   }
+
+  /* ── REVIEW PROMPT MODAL ── */
+  .review-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(26,24,20,0.42);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 220ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .review-modal-backdrop.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .review-modal {
+    background: var(--bg);
+    border: 0.5px solid var(--border2);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 6px rgba(26,24,20,0.06), 0 20px 48px rgba(26,24,20,0.16);
+    width: min(360px, 90vw);
+    overflow: hidden;
+    transform: scale(0.95) translateY(10px);
+    opacity: 0;
+    transition: transform 280ms cubic-bezier(0.23, 1, 0.32, 1), opacity 220ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .review-modal-backdrop.visible .review-modal {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  .review-modal-stripe {
+    height: 3px;
+    background: linear-gradient(90deg, var(--coral) 0%, var(--pink) 50%, var(--yellow) 100%);
+  }
+  .review-modal-body {
+    padding: 20px 22px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .review-modal-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    background: var(--coral-light);
+    border: 0.5px solid var(--coral-mid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .review-modal-icon svg { width: 17px; height: 17px; color: var(--coral); }
+  .review-modal-title {
+    font-family: var(--serif);
+    font-size: 18px;
+    color: var(--text);
+    line-height: 1.25;
+    margin: 0;
+  }
+  .review-modal-sub {
+    font-size: 12.5px;
+    color: var(--text3);
+    line-height: 1.55;
+    margin: 0;
+  }
+  .review-modal-btns {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    padding-top: 4px;
+    border-top: 0.5px solid var(--border);
+  }
+
+  /* ── REVIEW OVERLAY ── */
+  .review-overlay {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .review-overlay.visible { display: flex; }
+
+  .review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0 8px;
+  }
+  .review-header h2 {
+    font-family: var(--serif);
+    font-size: 20px;
+    color: var(--text);
+    margin: 0;
+  }
+
+  .review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .review-item {
+    background: var(--bg2);
+    border: 0.5px solid var(--border2);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border-left: 3px solid var(--border3);
+  }
+  .review-item.rv-ok { border-left-color: var(--green); }
+  .review-item.rv-ng { border-left-color: var(--red); }
+
+  .review-item-header {
+    padding: 12px 16px 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .review-q-num {
+    font-size: 9px;
+    font-family: var(--mono);
+    font-weight: 500;
+    background: var(--bg3);
+    color: var(--text3);
+    padding: 3px 7px;
+    border-radius: 999px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .review-item.rv-ok .review-q-num { background: var(--green-light); color: var(--green-dark); }
+  .review-item.rv-ng .review-q-num { background: var(--red-light); color: var(--red-dark); }
+
+  .review-q-text {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  .review-options {
+    padding: 0 16px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .rv-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 7px 10px;
+    border-radius: var(--radius-sm);
+    border: 0.5px solid transparent;
+    font-size: 12.5px;
+    color: var(--text2);
+    line-height: 1.5;
+  }
+  .rv-option.rv-correct {
+    background: var(--green-light);
+    border-color: var(--green);
+    color: var(--green-dark);
+  }
+  .rv-option.rv-user-wrong {
+    background: var(--red-light);
+    border-color: var(--red);
+    color: var(--red-dark);
+  }
+  .rv-option.rv-missed {
+    border: 0.5px dashed var(--green);
+    color: var(--green-dark);
+    opacity: 0.8;
+  }
+  .rv-opt-key {
+    font-size: 10px;
+    font-family: var(--mono);
+    flex-shrink: 0;
+    opacity: 0.65;
+    margin-top: 2px;
+    width: 13px;
+  }
+
+  .review-text-answer {
+    padding: 0 16px 12px;
+    font-size: 12.5px;
+    color: var(--text2);
+    line-height: 1.6;
+  }
+  .review-text-answer .rv-row {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 4px;
+  }
+  .rv-label {
+    font-size: 10px;
+    font-family: var(--mono);
+    background: var(--bg3);
+    color: var(--text3);
+    padding: 2px 6px;
+    border-radius: 4px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .rv-label.ok { background: var(--green-light); color: var(--green-dark); }
+  .rv-label.ng { background: var(--red-light); color: var(--red-dark); }
+
+  .rv-skip-note {
+    padding: 8px 16px 12px;
+    font-size: 12px;
+    color: var(--text3);
+    font-style: italic;
+  }
 </style>
 </head>
 <body>
@@ -935,32 +1148,66 @@
     </div>
 
     <div class="action-bar">
-      <button class="btn" id="prev-btn">
-        <i data-lucide="chevron-left"></i>
-        Előző <kbd>←</kbd>
+      <button class="btn btn-danger" id="clear-all-btn">
+        <i data-lucide="trash-2"></i>
+        Összes törlése
       </button>
       <button class="btn" id="clear-answer-btn">
         <i data-lucide="x"></i>
         Törlés <kbd>C</kbd>
       </button>
-      <button class="btn" id="next-btn">
-        Következő <kbd>→</kbd>
-        <i data-lucide="chevron-right"></i>
-      </button>
-      <div class="spacer"></div>
       <button class="btn" id="shuffle-btn">
         <i data-lucide="shuffle"></i>
         Keverés
       </button>
-      <button class="btn btn-danger" id="clear-all-btn">
-        <i data-lucide="trash-2"></i>
-        Összes törlése
+      <button class="btn" id="prev-btn">
+        <i data-lucide="chevron-left"></i>
+        Előző <kbd>←</kbd>
+      </button>
+      <button class="btn" id="next-btn">
+        Következő <kbd>→</kbd>
+        <i data-lucide="chevron-right"></i>
       </button>
       <button class="btn btn-primary" id="evaluate-btn">
         <i data-lucide="check"></i>
         Kiértékelés <kbd>E</kbd>
       </button>
     </div>
+  </div>
+
+  <!-- REVIEW PROMPT MODAL -->
+  <div id="review-modal-backdrop" class="review-modal-backdrop">
+    <div class="review-modal">
+      <div class="review-modal-stripe"></div>
+      <div class="review-modal-body">
+        <div class="review-modal-icon">
+          <i data-lucide="list-checks"></i>
+        </div>
+        <div>
+          <p class="review-modal-title">Minden kérdés kész!</p>
+          <p class="review-modal-sub">Szeretnéd átnézni a válaszaidat és a helyes megoldásokat?</p>
+        </div>
+        <div class="review-modal-btns">
+          <button class="btn" id="review-modal-no">Nem most</button>
+          <button class="btn btn-primary" id="review-modal-yes">
+            <i data-lucide="list-checks"></i>
+            Igen, mutasd!
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REVIEW OVERLAY -->
+  <div id="review-overlay" class="review-overlay">
+    <div class="review-header">
+      <h2>Áttekintés</h2>
+      <button class="btn" id="review-close-btn">
+        <i data-lucide="chevron-left"></i>
+        Vissza a quizhez
+      </button>
+    </div>
+    <div id="review-list" class="review-list"></div>
   </div>
 
   <!-- NOTICE -->
@@ -1003,6 +1250,7 @@ const state = {
   answers: [],
   evaluated: [],
   order: [],
+  optionOrders: {},
   trustVotes: {},
   voteData: {},
   darkMode: false,
@@ -1167,6 +1415,7 @@ function saveProgress() {
     userAnswers: state.answers,
     evaluatedQuestions: state.evaluated,
     order: state.order,
+    optionOrders: state.optionOrders,
     timestamp: Date.now(),
   };
   localStorage.setItem(QUIZ_PROGRESS_KEY, JSON.stringify(allProgress));
@@ -1188,6 +1437,9 @@ function loadProgress() {
   if (Array.isArray(saved.order) && saved.order.length === state.questions.length) {
     state.order = saved.order;
   }
+  if (saved.optionOrders && typeof saved.optionOrders === 'object') {
+    state.optionOrders = saved.optionOrders;
+  }
   if (typeof saved.currentQuestionIndex === 'number' && saved.currentQuestionIndex >= 0 && saved.currentQuestionIndex < state.questions.length) {
     state.current = saved.currentQuestionIndex;
   }
@@ -1198,6 +1450,7 @@ function resetProgress() {
   state.answers = new Array(state.questions.length).fill(null);
   state.evaluated = new Array(state.questions.length).fill(false);
   state.order = state.questions.map(function(_, idx) { return idx; });
+  state.optionOrders = {};
 }
 
 function updateHeaderMeta() {
@@ -1268,6 +1521,19 @@ function renderScore() {
   document.getElementById('ps-ng').textContent = ng;
 }
 
+function getOptionOrder(qIndex, question) {
+  if (!state.optionOrders[qIndex]) {
+    const keys = Object.keys(question.options || {});
+    for (let i = keys.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const tmp = keys[i]; keys[i] = keys[j]; keys[j] = tmp;
+    }
+    state.optionOrders[qIndex] = keys;
+    saveProgress();
+  }
+  return state.optionOrders[qIndex];
+}
+
 function renderMultiChoice(question, qIndex) {
   const container = document.getElementById('q-options');
   const options = question.options || {};
@@ -1276,11 +1542,13 @@ function renderMultiChoice(question, qIndex) {
   const selectedSet = normalizedSet(selected);
   const correctSet = normalizedSet(question.answer);
 
-  Object.keys(options).forEach(function(key) {
+  const orderedKeys = getOptionOrder(qIndex, question);
+  orderedKeys.forEach(function(key, positionIndex) {
     const option = document.createElement('div');
     option.className = 'option';
     const normalized = String(key).toLowerCase();
     const selectedNow = selectedSet.has(normalized);
+    const displayLabel = String.fromCodePoint(65 + positionIndex);
 
     if (state.evaluated[qIndex]) {
       if (correctSet.has(normalized)) option.classList.add('eval-ok');
@@ -1291,7 +1559,7 @@ function renderMultiChoice(question, qIndex) {
 
     option.innerHTML =
       '<div class="opt-radio"></div>' +
-      '<span class="opt-key">' + key.toUpperCase() + '</span>' +
+      '<span class="opt-key">' + displayLabel + '</span>' +
       '<span class="opt-text">' + options[key] + '</span>';
 
     option.onclick = function() {
@@ -1536,7 +1804,7 @@ function renderButtons(qIndex) {
   prev.disabled = state.current === 0;
   next.disabled = state.current === state.questions.length - 1;
   clear.disabled = !hasAnswer(state.answers[qIndex]);
-  evalBtn.disabled = state.evaluated[qIndex] || !hasAnswer(state.answers[qIndex]);
+  evalBtn.disabled = !hasAnswer(state.answers[qIndex]);
 }
 
 function render() {
@@ -1598,12 +1866,28 @@ function clearAll() {
   render();
 }
 
+function showReviewPrompt() {
+  document.getElementById('review-modal-backdrop').classList.add('visible');
+  lucide.createIcons();
+}
+
+function hideReviewPrompt() {
+  document.getElementById('review-modal-backdrop').classList.remove('visible');
+}
+
 function evaluate() {
   const qIndex = state.order[state.current];
+  if (state.evaluated[qIndex]) {
+    nextQ();
+    return;
+  }
   if (!hasAnswer(state.answers[qIndex])) return;
   state.evaluated[qIndex] = true;
   saveProgress();
   render();
+  if (state.current === state.questions.length - 1) {
+    showReviewPrompt();
+  }
 }
 
 function shuffleQ() {
@@ -1647,6 +1931,158 @@ function showFatalError(message) {
   lucide.createIcons();
 }
 
+function reviewItemClass(isEval, correct) {
+  if (!isEval) return 'review-item';
+  return correct ? 'review-item rv-ok' : 'review-item rv-ng';
+}
+
+function buildReviewHeader(position, question) {
+  const header = document.createElement('div');
+  header.className = 'review-item-header';
+  const numPill = document.createElement('span');
+  numPill.className = 'review-q-num';
+  numPill.textContent = 'Q ' + String(position).padStart(2, '0');
+  const qText = document.createElement('span');
+  qText.className = 'review-q-text';
+  qText.textContent = getQuestionHeading(question);
+  header.appendChild(numPill);
+  header.appendChild(qText);
+  return header;
+}
+
+function buildReviewMultiChoice(question, qIndex, userAnswer) {
+  const options = question.options || {};
+  const orderedKeys = state.optionOrders[qIndex] || Object.keys(options);
+  const selectedSet = normalizedSet(Array.isArray(userAnswer) ? userAnswer : []);
+  const correctSet = normalizedSet(question.answer);
+  const wrap = document.createElement('div');
+  wrap.className = 'review-options';
+
+  orderedKeys.forEach(function(key, posIdx) {
+    const normalized = String(key).toLowerCase();
+    const isSelected = selectedSet.has(normalized);
+    const isCorrectOpt = correctSet.has(normalized);
+    const row = document.createElement('div');
+    row.className = 'rv-option';
+    if (isSelected && isCorrectOpt) row.classList.add('rv-correct');
+    else if (isSelected) row.classList.add('rv-user-wrong');
+    else if (isCorrectOpt) row.classList.add('rv-missed');
+    const keySpan = document.createElement('span');
+    keySpan.className = 'rv-opt-key';
+    keySpan.textContent = String.fromCodePoint(65 + posIdx);
+    const textSpan = document.createElement('span');
+    textSpan.textContent = options[key];
+    row.appendChild(keySpan);
+    row.appendChild(textSpan);
+    wrap.appendChild(row);
+  });
+  return wrap;
+}
+
+function buildReviewFillBlanks(question, userAnswer) {
+  const blanks = getFillBlanks(question);
+  const answers = userAnswer && typeof userAnswer === 'object' ? userAnswer : {};
+  const wrap = document.createElement('div');
+  wrap.className = 'review-text-answer';
+
+  blanks.forEach(function(blank) {
+    const userVal = String(answers[blank.identifier] || '').trim();
+    const correctVal = String(blank.answer || '').trim();
+    const ok = userVal.toLowerCase() === correctVal.toLowerCase();
+    const row = document.createElement('div');
+    row.className = 'rv-row';
+    const label = document.createElement('span');
+    label.className = 'rv-label ' + (ok ? 'ok' : 'ng');
+    label.textContent = blank.identifier;
+    const text = document.createElement('span');
+    text.textContent = ok ? userVal : (userVal || '—') + ' → helyes: ' + correctVal;
+    row.appendChild(label);
+    row.appendChild(text);
+    wrap.appendChild(row);
+  });
+  return wrap;
+}
+
+function buildReviewDragDrop(question, userAnswer) {
+  const choices = Array.isArray(question.choices) ? question.choices : [];
+  const answers = userAnswer && typeof userAnswer === 'object' ? userAnswer : {};
+  const wrap = document.createElement('div');
+  wrap.className = 'review-text-answer';
+
+  Object.keys(answers).forEach(function(slot) {
+    const slotChoice = choices.find(function(c) { return c.identifier === slot; });
+    const pickedChoice = choices.find(function(c) { return c.identifier === answers[slot]; });
+    if (!slotChoice) return;
+    const row = document.createElement('div');
+    row.className = 'rv-row';
+    const label = document.createElement('span');
+    label.className = 'rv-label';
+    label.textContent = slotChoice.label || slot;
+    const text = document.createElement('span');
+    text.textContent = pickedChoice ? pickedChoice.label : answers[slot];
+    row.appendChild(label);
+    row.appendChild(text);
+    wrap.appendChild(row);
+  });
+  return wrap;
+}
+
+function buildReviewItem(question, qIndex, position) {
+  const isEval = state.evaluated[qIndex];
+  const userAnswer = state.answers[qIndex];
+  const correct = isEval ? isAnswerCorrect(question, userAnswer) : null;
+
+  const item = document.createElement('div');
+  item.className = reviewItemClass(isEval, correct);
+  item.appendChild(buildReviewHeader(position, question));
+
+  if (!isEval) {
+    const skip = document.createElement('div');
+    skip.className = 'rv-skip-note';
+    skip.textContent = hasAnswer(userAnswer) ? 'Megválaszolt, de nem értékelve.' : 'Nem megválaszolt.';
+    item.appendChild(skip);
+    return item;
+  }
+
+  if (question.question_type === 'multi_choice') {
+    item.appendChild(buildReviewMultiChoice(question, qIndex, userAnswer));
+  } else if (question.question_type === 'fill_the_blanks') {
+    item.appendChild(buildReviewFillBlanks(question, userAnswer));
+  } else if (question.question_type === 'drag_n_drop') {
+    const wrap = buildReviewDragDrop(question, userAnswer);
+    if (wrap.children.length === 0) {
+      const skip = document.createElement('div');
+      skip.className = 'rv-skip-note';
+      skip.textContent = 'Nem megválaszolt.';
+      item.appendChild(skip);
+    } else {
+      item.appendChild(wrap);
+    }
+  }
+
+  return item;
+}
+
+function showReview() {
+  const list = document.getElementById('review-list');
+  list.innerHTML = '';
+
+  state.order.forEach(function(qIndex, position) {
+    const question = state.questions[qIndex];
+    if (!question) return;
+    list.appendChild(buildReviewItem(question, qIndex, position + 1));
+  });
+
+  document.querySelector('.q-card').style.display = 'none';
+  document.getElementById('review-overlay').classList.add('visible');
+  lucide.createIcons();
+}
+
+function hideReview() {
+  document.querySelector('.q-card').style.display = '';
+  document.getElementById('review-overlay').classList.remove('visible');
+}
+
 function setupQuizInteractions() {
   document.getElementById('back-home-btn').addEventListener('click', function() {
     globalThis.location.href = 'quizesch-home.html';
@@ -1661,6 +2097,15 @@ function setupQuizInteractions() {
   document.getElementById('shuffle-btn').addEventListener('click', shuffleQ);
   document.getElementById('clear-all-btn').addEventListener('click', clearAll);
   document.getElementById('evaluate-btn').addEventListener('click', evaluate);
+  document.getElementById('review-close-btn').addEventListener('click', hideReview);
+  document.getElementById('review-modal-no').addEventListener('click', hideReviewPrompt);
+  document.getElementById('review-modal-yes').addEventListener('click', function() {
+    hideReviewPrompt();
+    showReview();
+  });
+  document.getElementById('review-modal-backdrop').addEventListener('click', function(e) {
+    if (e.target === this) hideReviewPrompt();
+  });
 }
 
 async function init() {
