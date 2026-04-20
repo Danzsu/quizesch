@@ -1038,6 +1038,70 @@
     color: var(--text3);
     font-style: italic;
   }
+
+  /* ═══════════════════════════════════════
+     MOBILE  (≤ 600 px)
+  ═══════════════════════════════════════ */
+  @media (max-width: 600px) {
+    body { overflow-x: hidden; }
+
+    /* Tighter horizontal padding */
+    .page { padding: 0 12px 48px; }
+
+    /* Nav */
+    .nav { gap: 6px; margin-bottom: 14px; }
+    .nav-right { gap: 6px; }
+
+    /* Progress accordion header: allow legend to wrap */
+    .pp-header { flex-wrap: wrap; gap: 6px; }
+    .pp-legend { gap: 6px; }
+
+    /* Score strip: 2 × 2 instead of 4 × 1 */
+    .score-strip { grid-template-columns: repeat(2, 1fr); }
+
+    /* Trust row: allow wrap so "Ellenőrzendő" doesn't overflow */
+    .trust-row { flex-wrap: wrap; }
+
+    /* Action bar ─────────────────────────
+       Order: [Prev][Next]  /  [Kiértékelés]  /  [Törlés][Keverés][Összes]
+    ──────────────────────────────────────── */
+    .action-bar { padding: 10px 12px; gap: 6px; }
+    .btn kbd { display: none; }          /* keyboard hints useless on touch */
+    .btn { min-height: 40px; touch-action: manipulation; }
+
+    #prev-btn         { flex: 1; justify-content: center; }
+    #next-btn         { flex: 1; justify-content: center; }
+    #evaluate-btn     { order: 3; flex: 1 1 100%; justify-content: center; }
+    #clear-answer-btn { order: 4; flex: 1; justify-content: center; }
+    #shuffle-btn      { order: 4; flex: 1; justify-content: center; }
+    #clear-all-btn    { order: 4; flex: 1; justify-content: center; }
+
+    /* Fill-in-blank inputs & drag-drop slots */
+    .fill-blank-input { min-width: 80px; font-size: 14px; }
+    .drop-slot        { min-width: 80px; }
+
+    /* Drag chips: bigger tap target, no grab cursor */
+    .drag-chip { padding: 9px 13px; cursor: default; }
+
+    /* Review overlay: tighter header */
+    .review-header h2 { font-size: 16px; }
+    .review-item-header { gap: 6px; }
+  }
+
+  /* ═══════════════════════════════════════
+     VERY SMALL PHONES  (≤ 400 px)
+  ═══════════════════════════════════════ */
+  @media (max-width: 400px) {
+    .page { padding: 0 10px 48px; }
+
+    /* Hide brand name text – keep only the "Q" icon */
+    .nav-brand { font-size: 0; gap: 0; }
+    .nav-brand-icon { font-size: 15px; width: 28px; height: 28px; }
+
+    /* Slightly smaller option text */
+    .opt-text { font-size: 12.5px; }
+    .q-text   { font-size: 14px; }
+  }
 </style>
 </head>
 <body>
