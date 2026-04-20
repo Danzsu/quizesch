@@ -10,6 +10,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js"></script>
 <style>
   /* ── TOKENS ── */
   :root {
@@ -565,6 +567,8 @@
   .option.sel .opt-key { color: var(--select); }
   .option.eval-ok .opt-key { color: var(--green-dark); }
   .option.eval-ng .opt-key { color: var(--red-dark); }
+  [data-theme="dark"] .option.eval-ok .opt-key { color: var(--text3); }
+  [data-theme="dark"] .option.eval-ng .opt-key { color: var(--text3); }
 
   .opt-text {
     font-size: 13.5px;
@@ -1281,6 +1285,29 @@ function escapeRegExp(str) {
   return str.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\\$&`);
 }
 
+// ── MATH RENDERING ──
+// renderMath: plain text input – HTML-escapes non-math parts, renders $...$ and $$...$$
+// renderMathHtml: HTML string input – only processes math delimiters, leaves surrounding HTML intact
+function _mathProcess(text, escHtml) {
+  if (!text) return '';
+  const esc = escHtml ? function(s) { return s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;'); } : function(s) { return s; };
+  const re = /[$][$]([\s\S]+?)[$][$]|[$]([^$\n]+?)[$]/g;
+  const out = [];
+  let last = 0, m;
+  while ((m = re.exec(text)) !== null) {
+    out.push(esc(text.slice(last, m.index)));
+    const display = m[1] !== undefined;
+    const math = display ? m[1] : m[2];
+    try { out.push(katex.renderToString(math.trim(), { displayMode: display, throwOnError: false })); }
+    catch(e) { out.push(esc(m[0])); console.warn('KaTeX render error:', e); }
+    last = m.index + m[0].length;
+  }
+  out.push(esc(text.slice(last)));
+  return out.join('');
+}
+function renderMath(text) { return _mathProcess(String(text || ''), true); }
+function renderMathHtml(html) { return _mathProcess(String(html || ''), false); }
+
 async function ensureFirebaseApi() {
   if (firebaseState.api) return firebaseState.api;
   if (!firebaseState.pending) {
@@ -1560,7 +1587,7 @@ function renderMultiChoice(question, qIndex) {
     option.innerHTML =
       '<div class="opt-radio"></div>' +
       '<span class="opt-key">' + displayLabel + '</span>' +
-      '<span class="opt-text">' + options[key] + '</span>';
+      '<span class="opt-text">' + renderMath(options[key]) + '</span>';
 
     option.onclick = function() {
       if (state.evaluated[qIndex]) return;
@@ -1602,7 +1629,7 @@ function renderFillTheBlanks(question, qIndex) {
 
   const rich = document.createElement('div');
   rich.className = 'q-rich-text';
-  rich.innerHTML = richText.replaceAll('\n', '<br>');
+  rich.innerHTML = renderMathHtml(richText).replaceAll('\n', '<br>');
   container.appendChild(rich);
 
   const inputs = container.querySelectorAll('.fill-blank-input[data-identifier]');
@@ -1641,7 +1668,7 @@ function renderDragAndDrop(question, qIndex) {
 
   const rich = document.createElement('div');
   rich.className = 'q-rich-text';
-  rich.innerHTML = richText.replaceAll('\n', '<br>');
+  rich.innerHTML = renderMathHtml(richText).replaceAll('\n', '<br>');
   container.appendChild(rich);
 
   const bank = document.createElement('div');
@@ -1649,7 +1676,7 @@ function renderDragAndDrop(question, qIndex) {
   choices.forEach(function(choice) {
     const chip = document.createElement('span');
     chip.className = 'drag-chip';
-    chip.textContent = choice.label;
+    chip.innerHTML = renderMath(choice.label);
     chip.draggable = !state.evaluated[qIndex];
     chip.dataset.identifier = choice.identifier;
     chip.dataset.label = choice.label;
@@ -1670,7 +1697,7 @@ function renderDragAndDrop(question, qIndex) {
     if (selectedIdentifier) {
       const selectedChoice = choices.find(function(choice) { return choice.identifier === selectedIdentifier; });
       if (selectedChoice) {
-        slot.textContent = selectedChoice.label;
+        slot.innerHTML = renderMath(selectedChoice.label);
         slot.classList.add('has-value');
       }
     }
@@ -1755,7 +1782,15 @@ function renderFeedback(question, qIndex) {
   let text = 'Helyes! Jól gondoltad.';
   if (!ok) {
     if (question.question_type === 'multi_choice') {
-      text = 'Nem helyes. A helyes válasz: ' + (Array.isArray(question.answer) ? question.answer.join(', ') : '—');
+      const orderedKeys = getOptionOrder(qIndex, question);
+      const correctKeys = Array.isArray(question.answer) ? question.answer : [question.answer];
+      const correctLabels = correctKeys.map(function(ans) {
+        const pos = orderedKeys.findIndex(function(k) {
+          return String(k).toLowerCase() === String(ans).toLowerCase();
+        });
+        return pos >= 0 ? String.fromCodePoint(65 + pos) : String(ans).toUpperCase();
+      });
+      text = 'Nem helyes. A helyes válasz: ' + correctLabels.join(', ');
     } else {
       text = 'Nem helyes. A helyes megoldásokat jelöltük a kérdésben.';
     }
@@ -1816,7 +1851,7 @@ function render() {
   const total = state.questions.length;
 
   document.getElementById('q-num').textContent = 'Q ' + String(state.current + 1).padStart(2, '0');
-  document.getElementById('q-text').textContent = getQuestionHeading(question);
+  document.getElementById('q-text').innerHTML = renderMath(getQuestionHeading(question));
   document.getElementById('qz-sub').textContent = (state.current + 1) + ' / ' + total + ' kérdés';
   document.getElementById('prog-label').textContent = (state.current + 1) + ' / ' + total;
   document.getElementById('pp-title').textContent = 'Haladás — ' + total + ' kérdés';
@@ -1944,7 +1979,7 @@ function buildReviewHeader(position, question) {
   numPill.textContent = 'Q ' + String(position).padStart(2, '0');
   const qText = document.createElement('span');
   qText.className = 'review-q-text';
-  qText.textContent = getQuestionHeading(question);
+  qText.innerHTML = renderMath(getQuestionHeading(question));
   header.appendChild(numPill);
   header.appendChild(qText);
   return header;
@@ -1971,7 +2006,7 @@ function buildReviewMultiChoice(question, qIndex, userAnswer) {
     keySpan.className = 'rv-opt-key';
     keySpan.textContent = String.fromCodePoint(65 + posIdx);
     const textSpan = document.createElement('span');
-    textSpan.textContent = options[key];
+    textSpan.innerHTML = renderMath(options[key]);
     row.appendChild(keySpan);
     row.appendChild(textSpan);
     wrap.appendChild(row);
@@ -2017,9 +2052,9 @@ function buildReviewDragDrop(question, userAnswer) {
     row.className = 'rv-row';
     const label = document.createElement('span');
     label.className = 'rv-label';
-    label.textContent = slotChoice.label || slot;
+    label.innerHTML = renderMath(slotChoice.label || slot);
     const text = document.createElement('span');
-    text.textContent = pickedChoice ? pickedChoice.label : answers[slot];
+    text.innerHTML = renderMath(pickedChoice ? pickedChoice.label : answers[slot]);
     row.appendChild(label);
     row.appendChild(text);
     wrap.appendChild(row);
