@@ -166,13 +166,22 @@
         "type": "Synthetic Questionnaire",
         "year": "2026"
       }
+    },
+    {
+    "fileName": "2020_zh_iru.json",
+      "tags": {
+        "subject": "Információs Rendszerek Üzemeltetése",
+        "type": "ZH",
+        "year": "2024"
+      }
     }
   ],
   "availableTags": {
     "subject": [
       "Kommunikációs Hálózatok",
       "Szoftvertechnikák",
-      "IT Biztonság"
+      "IT Biztonság",
+      "Információs Rendszerek Üzemeltetése"
     ],
     "type": [
       "PPZH",
