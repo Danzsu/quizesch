@@ -22,14 +22,12 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "Egy szerverparkban 1000TB adatmennyiséget kell menteni. Differenciális mentést használunk. A változás mértéke kb. 1096/nap, de az adatmennyiség nem növekszik, csak a tartalom módosul. Határozza meg, hogy hetes mentési ciklus, és napi mentések (- vasárnap full, a többi napon differenciális) esetén hány TB adat kerül a mentőrendszerbe egy átlagos szerdai napon?",
-      "options": {
-        "a": "300"
+      "question_type": "fill_the_blanks",
+      "text": "Egy szerverparkban 1000TB adatmennyiséget kell menteni. Differenciális mentést használunk. A változás mértéke kb. 1096/nap, de az adatmennyiség nem növekszik, csak a tartalom módosul. Határozza meg, hogy hetes mentési ciklus, és napi mentések (- vasárnap full, a többi napon differenciális) esetén hány TB adat kerül a mentőrendszerbe egy átlagos szerdai napon?",
+      "blank": {
+        "identifier": "field1",
+        "answer": "300"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 2,
       "supervised": "yes"
     },
@@ -126,26 +124,22 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "Egy aggregációs switch 32 db 10 Gb/s porttal rendelkezik. 8 portját használjuk a core réteg felé redundáns összeköttetésekre. Mekkora a túlméretezés (oversubscription) ezen a switch-en, ha a portjait maximálisan kihasználjuk?",
-      "options": {
-        "a": "3"
+      "question_type": "fill_the_blanks",
+      "text": "Egy aggregációs switch 32 db 10 Gb/s porttal rendelkezik. 8 portját használjuk a core réteg felé redundáns összeköttetésekre. Mekkora a túlméretezés (oversubscription) ezen a switch-en, ha a portjait maximálisan kihasználjuk?",
+      "blank": {
+        "identifier": "field1",
+        "answer": "3"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 9,
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "Abban a hálózatban, amelyik a 168.32.12.29/26 IP című gépét tartalmazza, mi a broadcast cím utolsó bájtja(decimálisan)?",
-      "options": {
-        "a": "63"
+      "question_type": "fill_the_blanks",
+      "text": "Abban a hálózatban, amelyik a 168.32.12.29/26 IP című gépét tartalmazza, mi a broadcast cím utolsó bájtja(decimálisan)?",
+      "blank": {
+        "identifier": "field1",
+        "answer": "63"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 10,
       "supervised": "yes"
     },
@@ -260,14 +254,12 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "Fattree topológiában egy access switc-hez 24 szerver kapcsolódik. Hány podunk lehet maximális kiépítésben?",
-      "options": {
-        "a": "48"
+      "question_type": "fill_the_blanks",
+      "text": "Fattree topológiában egy access switc-hez 24 szerver kapcsolódik. Hány podunk lehet maximális kiépítésben?",
+      "blank": {
+        "identifier": "field1",
+        "answer": "48"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 18,
       "supervised": "yes"
     },
@@ -302,14 +294,12 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "Abban a hálózatban, amelyik a 168.32.12.79/25 IP című gépét tartalmazza, mi a broadcast cím utolsó bájtjaldecimálisan)?",
-      "options": {
-        "a": "127"
+      "question_type": "fill_the_blanks",
+      "text": "Abban a hálózatban, amelyik a 168.32.12.79/25 IP című gépét tartalmazza, mi a broadcast cím utolsó bájtjaldecimálisan)?",
+      "blank": {
+        "identifier": "field1",
+        "answer": "127"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 21,
       "supervised": "yes"
     },
@@ -480,14 +470,12 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "Egy spine and leaf architektúrában 48 portos switcheket használunk. Egy leaf switch-hez 38 szerver kapcsolódik. Maximális kiépítésben hány spine switch-ünk lehet?",
-      "options": {
-        "a": "10"
+      "question_type": "fill_the_blanks",
+      "text": "Egy spine and leaf architektúrában 48 portos switcheket használunk. Egy leaf switch-hez 38 szerver kapcsolódik. Maximális kiépítésben hány spine switch-ünk lehet?",
+      "blank": {
+        "identifier": "field1",
+        "answer": "10"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 33,
       "supervised": "yes"
     },
@@ -678,14 +666,12 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "Létrehozunk egy 9 blokkból álló fájlt. Egy nap múlva ennek a fájlnak a 1., 5. és 8. blokkjában végzünk módosításokat, majd a következő nap az utolsó blokkját töröljük, és az 5. blokkot újra megváltoztatjuk. A harmadik nap az első elé beszúrunk egy blokkot. Flash Copy használatával, hány soros lesz a negyedik napi Flash Copy tábla?",
-      "options": {
-        "a": "3"
+      "question_type": "fill_the_blanks",
+      "text": "Létrehozunk egy 9 blokkból álló fájlt. Egy nap múlva ennek a fájlnak a 1., 5. és 8. blokkjában végzünk módosításokat, majd a következő nap az utolsó blokkját töröljük, és az 5. blokkot újra megváltoztatjuk. A harmadik nap az első elé beszúrunk egy blokkot. Flash Copy használatával, hány soros lesz a negyedik napi Flash Copy tábla?",
+      "blank": {
+        "identifier": "field1",
+        "answer": "3"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 46,
       "supervised": "yes"
     },
@@ -796,14 +782,12 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "Egy szerverparkban 200TB adatmennyiséget kell menteni. Inkrementális  mentést használunk. A változás mértéke kb. 15\"6/nap, de az adatmennyiség nem növekszik, csak a tartalom módosul. Határozza meg, hogy hetes mentési ciklus, és napi mentések (- vasárnap full, a többi napon inkrementális) esetén hány szalagot kell használnunk egy átlagos pénteki napon, ha egy szalag mérete 12 TB?",
-      "options": {
-        "a": "3"
+      "question_type": "fill_the_blanks",
+      "text": "Egy szerverparkban 200TB adatmennyiséget kell menteni. Inkrementális  mentést használunk. A változás mértéke kb. 15\"6/nap, de az adatmennyiség nem növekszik, csak a tartalom módosul. Határozza meg, hogy hetes mentési ciklus, és napi mentések (- vasárnap full, a többi napon inkrementális) esetén hány szalagot kell használnunk egy átlagos pénteki napon, ha egy szalag mérete 12 TB?",
+      "blank": {
+        "identifier": "field1",
+        "answer": "3"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 54,
       "supervised": "yes"
     },
@@ -823,14 +807,12 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "Egy szerverparkban 2000TB adatmennyiséget kell menteni. Inkrementális mentést használunk. A változás mértéke kb. 59/nap, de az adatmennyiség nem növekszik, csak a tartalom módosul. Határozza meg, hogy hetes mentési ciklus, és napi mentések (- vasárnap full, a többi napon inkrementális) esetén hány TB adat kerül a mentőrendszerbe a hónap második vasárnapán?",
-      "options": {
-        "a": "2000"
+      "question_type": "fill_the_blanks",
+      "text": "Egy szerverparkban 2000TB adatmennyiséget kell menteni. Inkrementális mentést használunk. A változás mértéke kb. 59/nap, de az adatmennyiség nem növekszik, csak a tartalom módosul. Határozza meg, hogy hetes mentési ciklus, és napi mentések (- vasárnap full, a többi napon inkrementális) esetén hány TB adat kerül a mentőrendszerbe a hónap második vasárnapán?",
+      "blank": {
+        "identifier": "field1",
+        "answer": "2000"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 56,
       "supervised": "yes"
     },
@@ -850,14 +832,12 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "Egy spine and leaf architektúrában 64 portos switcheket használunk. Egy. leaf switch-hez 48 szerver kapcsolódik. Maximális kiépítésben hány spine switch-ünk lehet?",
-      "options": {
-        "a": "16"
+      "question_type": "fill_the_blanks",
+      "text": "Egy spine and leaf architektúrában 64 portos switcheket használunk. Egy. leaf switch-hez 48 szerver kapcsolódik. Maximális kiépítésben hány spine switch-ünk lehet?",
+      "blank": {
+        "identifier": "field1",
+        "answer": "16"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 58,
       "supervised": "yes"
     },
@@ -1196,14 +1176,12 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "A következő módon megadott hálózat maximum hány gépet tartalmaz?  152.130.244.0/27",
-      "options": {
-        "a": "30"
+      "question_type": "fill_the_blanks",
+      "text": "A következő módon megadott hálózat maximum hány gépet tartalmaz?  152.130.244.0/27",
+      "blank": {
+        "identifier": "field1",
+        "answer": "30"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 81,
       "supervised": "yes"
     },
@@ -1269,14 +1247,12 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "Mi annak a hálózatnak, amelyik a 168.32.12.169/25 IP című gépet tartalmazza, a hálózati címének utolsó bájtja (decimálisan)?",
-      "options": {
-        "a": "128"
+      "question_type": "fill_the_blanks",
+      "text": "Mi annak a hálózatnak, amelyik a 168.32.12.169/25 IP című gépet tartalmazza, a hálózati címének utolsó bájtja (decimálisan)?",
+      "blank": {
+        "identifier": "field1",
+        "answer": "128"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 86,
       "supervised": "yes"
     },
@@ -1460,14 +1436,12 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "A következő módon megadott hálózat maximum hány gépet tartalmaz? 152.130.100.0/23",
-      "options": {
-        "a": "510"
+      "question_type": "fill_the_blanks",
+      "text": "A következő módon megadott hálózat maximum hány gépet tartalmaz? 152.130.100.0/23",
+      "blank": {
+        "identifier": "field1",
+        "answer": "510"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 99,
       "supervised": "yes"
     },
@@ -1531,14 +1505,12 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "Egy aggregációs switch 48 db 10 Gb/s porttal rendelkezik. 16 portját használjuk a core réteg felé redundáns összeköttetésekre. Mekkora a túlméretezés (oversubscription) ezen a switch-en, ha a portjait maximálisan kihasználjuk?",
-      "options": {
-        "a": "2"
+      "question_type": "fill_the_blanks",
+      "text": "Egy aggregációs switch 48 db 10 Gb/s porttal rendelkezik. 16 portját használjuk a core réteg felé redundáns összeköttetésekre. Mekkora a túlméretezés (oversubscription) ezen a switch-en, ha a portjait maximálisan kihasználjuk?",
+      "blank": {
+        "identifier": "field1",
+        "answer": "2"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 104,
       "supervised": "yes"
     },
@@ -1573,14 +1545,12 @@
       "supervised": "yes"
     },
     {
-      "question_type": "multi_choice",
-      "question_title": "Fattree topológiában 32 pod-unk van maximális kiépítésben. Egy access switch-hez maximum hány szerver kapcsolódhat?",
-      "options": {
-        "a": "16"
+      "question_type": "fill_the_blanks",
+      "text": "Fattree topológiában 32 pod-unk van maximális kiépítésben. Egy access switch-hez maximum hány szerver kapcsolódhat?",
+      "blank": {
+        "identifier": "field1",
+        "answer": "16"
       },
-      "answer": [
-        "a"
-      ],
       "ID": 107,
       "supervised": "yes"
     },
