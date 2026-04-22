@@ -23,7 +23,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "Egy szerverparkban 1000TB adatmennyiséget kell menteni. Differenciális mentést használunk. A változás mértéke kb. 1096/nap, de az adatmennyiség nem növekszik, csak a tartalom módosul. Határozza meg, hogy hetes mentési ciklus, és napi mentések (- vasárnap full, a többi napon differenciális) esetén hány TB adat kerül a mentőrendszerbe egy átlagos szerdai napon?",
+      "text": "Egy szerverparkban 1000TB adatmennyiséget kell menteni. Differenciális mentést használunk. A változás mértéke kb. 1096/nap, de az adatmennyiség nem növekszik, csak a tartalom módosul. Határozza meg, hogy hetes mentési ciklus, és napi mentések (- vasárnap full, a többi napon differenciális) esetén hány TB adat kerül a mentőrendszerbe egy átlagos szerdai napon? [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "300"
@@ -125,7 +125,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "Egy aggregációs switch 32 db 10 Gb/s porttal rendelkezik. 8 portját használjuk a core réteg felé redundáns összeköttetésekre. Mekkora a túlméretezés (oversubscription) ezen a switch-en, ha a portjait maximálisan kihasználjuk?",
+      "text": "Egy aggregációs switch 32 db 10 Gb/s porttal rendelkezik. 8 portját használjuk a core réteg felé redundáns összeköttetésekre. Mekkora a túlméretezés (oversubscription) ezen a switch-en, ha a portjait maximálisan kihasználjuk? [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "3"
@@ -135,7 +135,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "Abban a hálózatban, amelyik a 168.32.12.29/26 IP című gépét tartalmazza, mi a broadcast cím utolsó bájtja(decimálisan)?",
+      "text": "Abban a hálózatban, amelyik a 168.32.12.29/26 IP című gépét tartalmazza, mi a broadcast cím utolsó bájtja(decimálisan)? [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "63"
@@ -255,7 +255,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "Fattree topológiában egy access switc-hez 24 szerver kapcsolódik. Hány podunk lehet maximális kiépítésben?",
+      "text": "Fattree topológiában egy access switc-hez 24 szerver kapcsolódik. Hány podunk lehet maximális kiépítésben? [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "48"
@@ -295,7 +295,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "Abban a hálózatban, amelyik a 168.32.12.79/25 IP című gépét tartalmazza, mi a broadcast cím utolsó bájtjaldecimálisan)?",
+      "text": "Abban a hálózatban, amelyik a 168.32.12.79/25 IP című gépét tartalmazza, mi a broadcast cím utolsó bájtjaldecimálisan)? [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "127"
@@ -471,7 +471,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "Egy spine and leaf architektúrában 48 portos switcheket használunk. Egy leaf switch-hez 38 szerver kapcsolódik. Maximális kiépítésben hány spine switch-ünk lehet?",
+      "text": "Egy spine and leaf architektúrában 48 portos switcheket használunk. Egy leaf switch-hez 38 szerver kapcsolódik. Maximális kiépítésben hány spine switch-ünk lehet? [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "10"
@@ -667,7 +667,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "Létrehozunk egy 9 blokkból álló fájlt. Egy nap múlva ennek a fájlnak a 1., 5. és 8. blokkjában végzünk módosításokat, majd a következő nap az utolsó blokkját töröljük, és az 5. blokkot újra megváltoztatjuk. A harmadik nap az első elé beszúrunk egy blokkot. Flash Copy használatával, hány soros lesz a negyedik napi Flash Copy tábla?",
+      "text": "Létrehozunk egy 9 blokkból álló fájlt. Egy nap múlva ennek a fájlnak a 1., 5. és 8. blokkjában végzünk módosításokat, majd a következő nap az utolsó blokkját töröljük, és az 5. blokkot újra megváltoztatjuk. A harmadik nap az első elé beszúrunk egy blokkot. Flash Copy használatával, hány soros lesz a negyedik napi Flash Copy tábla? [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "3"
@@ -783,7 +783,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "Egy szerverparkban 200TB adatmennyiséget kell menteni. Inkrementális  mentést használunk. A változás mértéke kb. 15\"6/nap, de az adatmennyiség nem növekszik, csak a tartalom módosul. Határozza meg, hogy hetes mentési ciklus, és napi mentések (- vasárnap full, a többi napon inkrementális) esetén hány szalagot kell használnunk egy átlagos pénteki napon, ha egy szalag mérete 12 TB?",
+      "text": "Egy szerverparkban 200TB adatmennyiséget kell menteni. Inkrementális  mentést használunk. A változás mértéke kb. 15\"6/nap, de az adatmennyiség nem növekszik, csak a tartalom módosul. Határozza meg, hogy hetes mentési ciklus, és napi mentések (- vasárnap full, a többi napon inkrementális) esetén hány szalagot kell használnunk egy átlagos pénteki napon, ha egy szalag mérete 12 TB? [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "3"
@@ -808,7 +808,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "Egy szerverparkban 2000TB adatmennyiséget kell menteni. Inkrementális mentést használunk. A változás mértéke kb. 59/nap, de az adatmennyiség nem növekszik, csak a tartalom módosul. Határozza meg, hogy hetes mentési ciklus, és napi mentések (- vasárnap full, a többi napon inkrementális) esetén hány TB adat kerül a mentőrendszerbe a hónap második vasárnapán?",
+      "text": "Egy szerverparkban 2000TB adatmennyiséget kell menteni. Inkrementális mentést használunk. A változás mértéke kb. 59/nap, de az adatmennyiség nem növekszik, csak a tartalom módosul. Határozza meg, hogy hetes mentési ciklus, és napi mentések (- vasárnap full, a többi napon inkrementális) esetén hány TB adat kerül a mentőrendszerbe a hónap második vasárnapán? [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "2000"
@@ -833,7 +833,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "Egy spine and leaf architektúrában 64 portos switcheket használunk. Egy. leaf switch-hez 48 szerver kapcsolódik. Maximális kiépítésben hány spine switch-ünk lehet?",
+      "text": "Egy spine and leaf architektúrában 64 portos switcheket használunk. Egy. leaf switch-hez 48 szerver kapcsolódik. Maximális kiépítésben hány spine switch-ünk lehet? [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "16"
@@ -1177,7 +1177,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "A következő módon megadott hálózat maximum hány gépet tartalmaz?  152.130.244.0/27",
+      "text": "A következő módon megadott hálózat maximum hány gépet tartalmaz?  152.130.244.0/27 [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "30"
@@ -1248,7 +1248,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "Mi annak a hálózatnak, amelyik a 168.32.12.169/25 IP című gépet tartalmazza, a hálózati címének utolsó bájtja (decimálisan)?",
+      "text": "Mi annak a hálózatnak, amelyik a 168.32.12.169/25 IP című gépet tartalmazza, a hálózati címének utolsó bájtja (decimálisan)? [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "128"
@@ -1437,7 +1437,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "A következő módon megadott hálózat maximum hány gépet tartalmaz? 152.130.100.0/23",
+      "text": "A következő módon megadott hálózat maximum hány gépet tartalmaz? 152.130.100.0/23 [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "510"
@@ -1506,7 +1506,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "Egy aggregációs switch 48 db 10 Gb/s porttal rendelkezik. 16 portját használjuk a core réteg felé redundáns összeköttetésekre. Mekkora a túlméretezés (oversubscription) ezen a switch-en, ha a portjait maximálisan kihasználjuk?",
+      "text": "Egy aggregációs switch 48 db 10 Gb/s porttal rendelkezik. 16 portját használjuk a core réteg felé redundáns összeköttetésekre. Mekkora a túlméretezés (oversubscription) ezen a switch-en, ha a portjait maximálisan kihasználjuk? [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "2"
@@ -1546,7 +1546,7 @@
     },
     {
       "question_type": "fill_the_blanks",
-      "text": "Fattree topológiában 32 pod-unk van maximális kiépítésben. Egy access switch-hez maximum hány szerver kapcsolódhat?",
+      "text": "Fattree topológiában 32 pod-unk van maximális kiépítésben. Egy access switch-hez maximum hány szerver kapcsolódhat? [field1]",
       "blank": {
         "identifier": "field1",
         "answer": "16"
